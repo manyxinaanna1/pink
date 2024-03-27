@@ -1,0 +1,13 @@
+.container {
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+  
+    @media (min-width: $breakpoint-medium) {
+      width: 620px;
+    }
+  
+    @media (min-width: $breakpoint-large) {
+      width: 940px;
+    }
+  }
