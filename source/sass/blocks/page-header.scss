@@ -1,8 +1,8 @@
 .page__header {
     background-image: url('../img/bg-mobile.jpg');
     background-repeat: no-repeat;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: $color-graphite-gray;
+    color: $color-white;
     min-height: 462px;
 }
 .page-header__bar {
@@ -24,7 +24,6 @@
 }
 .page-header__promo {
     font-weight: 300;
-    text-align: center;
     font-size: 24px;
     line-height: 29px;
 }

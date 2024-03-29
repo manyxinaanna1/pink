@@ -1,0 +1,45 @@
+.tariff__compare__table,
+.tariff__compare__header,
+.tariff__compare {
+    border: 2px solid #E5E5E5;
+    border-collapse: collapse;
+}
+.tariff__compare__header, 
+.tariff__compare {
+    width: 234px;
+    min-height: 59px;
+}
+.tariff__compare__header {
+    background-color: $color-graphite-gray;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+.tariff__compare {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+}
+.tariff__compare__header-none {
+    background-color: $color-white;
+    border: none;
+}
+.tariff__compare-name {
+    padding: 23px 22px;
+}
+.tariff__compare-yes {
+    background-image: url('../img/icons/yes.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+.tariff__compare-no {
+    background-image: url('../img/icons/no.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
