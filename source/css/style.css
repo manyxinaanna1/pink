@@ -47,6 +47,28 @@ img {
   font-family: "Oswald", "Arial", sans-serif;
 }
 
+.contasts__paragraph__guestions {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+}
+
+.contasts__paragraph {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.contasts__link,
+.contasts__address {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  color: #D22856;
+  text-decoration: none;
+  font-style: normal;
+}
+
 .container {
   width: 280px;
   margin-right: auto;
@@ -111,6 +133,25 @@ img {
   line-height: 24px;
   font-weight: 300;
   margin-bottom: 38px;
+}
+
+.page__footer__social__link {
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50px;
+  padding: 17px 15px;
+}
+
+.page__footer__social {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.page__footer__social__item:not(:last-child) {
+  margin-right: 14px;
 }
 
 .page__header {
