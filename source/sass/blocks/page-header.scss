@@ -4,6 +4,7 @@
     background-color: $color-graphite-gray;
     color: $color-white;
     min-height: 462px;
+    position: relative;
 }
 .page-header__bar {
     display: grid;
@@ -15,7 +16,7 @@
 .page-header__toggler {
     width: 50px;
     height: 24px;
-    
+
     background-color: transparent;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -26,4 +27,12 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
+}
+.phone {
+  background-image: url(../img/phone.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: absolute;
+  width: 320px;
+  height: 286px;
 }

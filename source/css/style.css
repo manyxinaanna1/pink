@@ -105,27 +105,39 @@ img {
 .download__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   margin-top: 32px;
+  margin-left: 38px;
+  margin-right: 38px;
   margin-bottom: 28px;
   padding: 0;
   min-height: 56px;
   list-style-type: none;
+  align-items: center;
+}
+
+.download__item:not(:last-child) {
+  margin-right: 35px;
 }
 
 .download__item--apple {
   background: url("../img/apple-logo.svg");
   background-repeat: no-repeat;
+  width: 47px;
+  height: 56px;
 }
 
 .download__item--android {
   background: url("../img/android-logo.svg");
   background-repeat: no-repeat;
+  width: 43px;
+  height: 47px;
 }
 
 .download__item--microsoft {
   background: url("../img/microsoft-logo.svg");
   background-repeat: no-repeat;
+  width: 44px;
+  height: 41px;
 }
 
 .download__paragraph {
@@ -174,6 +186,7 @@ img {
   background-color: #283645;
   color: #ffffff;
   min-height: 462px;
+  position: relative;
 }
 
 .page-header__bar {
@@ -200,6 +213,15 @@ img {
   line-height: 29px;
 }
 
+.phone {
+  background-image: url(../img/phone.png);
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: absolute;
+  width: 320px;
+  height: 286px;
+}
+
 .page__body {
   font-family: "Oswald", "Arial", sans-serif;
   background-color: #ffffff;
@@ -212,12 +234,6 @@ img {
   line-height: 29px;
 }
 
-.promo__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 .promo__title {
   font-size: 18px;
   line-height: 24px;
@@ -228,16 +244,58 @@ img {
   line-height: 24px;
 }
 
-.promo__device__list {
+.promo__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
   min-height: 245px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+@media (min-width: 1200px) {
+  .promo__list {
+    text-align: center;
+  }
 }
 
-.promo__device--third {
-  background-image: url("../img/iphone3-small.png");
-  background-repeat: no-repeat;
+.promo__item {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .promo__item {
+    width: 252px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo__item::last-child {
+    margin-right: 0;
+  }
+}
+
+.promo__device-image--first,
+.promo__device-image--second {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .promo__device-image--first,
+.promo__device-image--second {
+    display: block;
+  }
+}
+
+@media (min-width: 660px) {
+  .promo__device-image--third {
+    position: absolute;
+  }
+}
+@media (min-width: 1200px) {
+  .promo__device-image--third {
+    position: static;
+  }
 }
 
 .tariff__compare__table,

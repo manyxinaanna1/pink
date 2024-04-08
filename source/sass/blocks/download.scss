@@ -18,25 +18,37 @@
 .download__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
+
     margin-top: 32px;
+    margin-left: 38px;
+    margin-right: 38px;
     margin-bottom: 28px;
     padding: 0;
     min-height: 56px;
     list-style-type: none;
+    align-items: center;
+}
+.download__item:not(:last-child) {
+  margin-right: 35px
 }
 
 .download__item--apple {
     background: url('../img/apple-logo.svg');
     background-repeat: no-repeat;
+    width: 47px;
+    height: 56px;
 }
 .download__item--android {
     background: url('../img/android-logo.svg');
     background-repeat: no-repeat;
+    width: 43px;
+    height: 47px;
 }
 .download__item--microsoft {
     background: url('../img/microsoft-logo.svg');
     background-repeat: no-repeat;
+    width: 44px;
+    height: 41px;
 }
 .download__paragraph {
     font-size: 14px;
