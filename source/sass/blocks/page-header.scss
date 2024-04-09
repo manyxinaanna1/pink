@@ -5,10 +5,18 @@
     color: $color-white;
     min-height: 462px;
     position: relative;
+    @media (min-width: $breakpoint-medium) {
+      background-image: url('../img/bg-tablet.jpg');
+      min-height: 729px;
+    }
+    @media (min-width: $breakpoint-large) {
+      background-image: url('../img/bg-desktop.jpg');
+      min-height: 853px;
+    }
 }
 .page-header__bar {
-    display: grid;
-    grid-template-columns: 74px 50px;
+    display: flex;
+
     gap: 156px;
     padding-top: 22px;
     padding-bottom: 21px;
@@ -16,7 +24,7 @@
 .page-header__toggler {
     width: 50px;
     height: 24px;
-
+    margin-left: auto;
     background-color: transparent;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -29,10 +37,16 @@
     line-height: 29px;
 }
 .phone {
-  background-image: url(../img/phone.png);
+  background-image: url('../img/phone-mobile.png');
   background-repeat: no-repeat;
   z-index: 1;
   position: absolute;
   width: 320px;
   height: 286px;
+  @media (min-width: $breakpoint-medium) {
+    background-image: url('../img/phone-tablet.png');
+    width: 660px;
+    height: 545px;
+    left: -150px;
+  }
 }

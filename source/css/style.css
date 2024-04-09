@@ -76,7 +76,7 @@ img {
 }
 @media (min-width: 660px) {
   .container {
-    width: 620px;
+    width: 588px;
   }
 }
 @media (min-width: 1200px) {
@@ -188,10 +188,21 @@ img {
   min-height: 462px;
   position: relative;
 }
+@media (min-width: 660px) {
+  .page__header {
+    background-image: url("../img/bg-tablet.jpg");
+    min-height: 729px;
+  }
+}
+@media (min-width: 1200px) {
+  .page__header {
+    background-image: url("../img/bg-desktop.jpg");
+    min-height: 853px;
+  }
+}
 
 .page-header__bar {
-  display: grid;
-  grid-template-columns: 74px 50px;
+  display: flex;
   gap: 156px;
   padding-top: 22px;
   padding-bottom: 21px;
@@ -200,6 +211,7 @@ img {
 .page-header__toggler {
   width: 50px;
   height: 24px;
+  margin-left: auto;
   background-color: transparent;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -214,12 +226,20 @@ img {
 }
 
 .phone {
-  background-image: url(../img/phone.png);
+  background-image: url("../img/phone-mobile.png");
   background-repeat: no-repeat;
   z-index: 1;
   position: absolute;
   width: 320px;
   height: 286px;
+}
+@media (min-width: 660px) {
+  .phone {
+    background-image: url("../img/phone-tablet.png");
+    width: 660px;
+    height: 545px;
+    left: -150px;
+  }
 }
 
 .page__body {
@@ -250,9 +270,16 @@ img {
   margin: 0;
   min-height: 245px;
   text-align: left;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column-reverse;
+}
+@media (min-width: 660px) {
+  .promo__list {
+    margin-left: 310px;
+    width: 310px;
+  }
 }
 @media (min-width: 1200px) {
   .promo__list {
@@ -261,7 +288,13 @@ img {
 }
 
 .promo__item {
-  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 660px) {
+  .promo__item {
+    flex-direction: column;
+  }
 }
 @media (min-width: 1200px) {
   .promo__item {
@@ -290,6 +323,8 @@ img {
 @media (min-width: 660px) {
   .promo__device-image--third {
     position: absolute;
+    top: 0;
+    left: -310px;
   }
 }
 @media (min-width: 1200px) {
