@@ -1,10 +1,18 @@
-.tariff__compare__table,
+.tariff__compare__table {
+  padding: 0 20px;
+  width: 832px;
+  margin: 0 auto 43px;
+  background-color: #fff;
+  border-collapse: collapse;
+  transform: translateX(-255px);
+  overflow: hidden;
+}
 .tariff__compare__header,
 .tariff__compare {
     border: 2px solid #E5E5E5;
-    border-collapse: collapse;
+
 }
-.tariff__compare__header, 
+.tariff__compare__header,
 .tariff__compare {
     width: 234px;
     min-height: 59px;
@@ -17,6 +25,12 @@
     font-size: 18px;
     line-height: 30px;
 }
+.tariff__compare--element {
+  font-weight: 300;
+  font-size: 24px;
+  display: block;
+  line-height: 30px;
+}
 .tariff__compare {
     font-size: 18px;
     line-height: 30px;
@@ -25,6 +39,16 @@
 .tariff__compare__header-none {
     background-color: $color-white;
     border: none;
+}
+.tariff__compare__header--hit {
+  background-image: url("../img/hit-desktop.png");
+  background-repeat: no-repeat;
+  @media (min-width: $breakpoint-medium) {
+    background-image: url("../img/hit-tablet.png");
+    }
+  @media (min-width: $breakpoint-medium) {
+  background-image: url("../img/hit-desktop.png");
+  }
 }
 .tariff__compare-name {
     padding: 23px 22px;
