@@ -30,6 +30,90 @@ img {
   height: auto;
 }
 
+.adventures__color {
+  height: 90px;
+  background: linear-gradient(to bottom right, #ffffff 50%, #F2F2F2 50%);
+}
+
+.adventuries__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  min-height: 245px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 1200px) {
+  .adventuries__list {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .adventuries__item {
+    width: 252px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .adventuries__item::last-child {
+    margin-right: 0;
+  }
+}
+
+.adventuries__item--third {
+  position: relative;
+}
+
+.adventuries__image--first,
+.adventuries__image--second {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .adventuries__image--first,
+.adventuries__image--second {
+    display: block;
+  }
+}
+
+@media (min-width: 660px) {
+  .adventuries__image--third {
+    position: absolute;
+    top: 0;
+    left: -310px;
+  }
+}
+@media (min-width: 1200px) {
+  .adventuries__image--third {
+    position: static;
+  }
+}
+
+.adventuries__title {
+  font-size: 18px;
+  line-height: 24px;
+}
+@media (min-width: 1200px) {
+  .adventuries__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.adventuries__paragraph {
+  font-size: 14px;
+  line-height: 24px;
+}
+@media (min-width: 1200px) {
+  .adventuries__paragraph {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
 .blockquote__author {
   font-style: normal;
   font-weight: 700;
@@ -100,6 +184,7 @@ img {
   font-weight: 700;
   padding: 21px 38px;
   box-sizing: border-box;
+  margin-top: 28px;
 }
 
 .download__list {
@@ -144,7 +229,7 @@ img {
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
-  margin-bottom: 38px;
+  padding-bottom: 38px;
 }
 
 .page__footer__logo__image {
@@ -375,75 +460,6 @@ img {
 .promo__item__paragraph {
   font-size: 14px;
   line-height: 24px;
-}
-
-.promo__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  min-height: 245px;
-  text-align: left;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-}
-@media (min-width: 660px) {
-  .promo__list {
-    margin-left: 310px;
-    width: 310px;
-  }
-}
-@media (min-width: 1200px) {
-  .promo__list {
-    text-align: center;
-  }
-}
-
-.promo__item {
-  display: flex;
-  flex-direction: column-reverse;
-}
-@media (min-width: 660px) {
-  .promo__item {
-    flex-direction: column;
-  }
-}
-@media (min-width: 1200px) {
-  .promo__item {
-    width: 252px;
-    margin-right: 50px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .promo__item::last-child {
-    margin-right: 0;
-  }
-}
-
-.promo__device-image--first,
-.promo__device-image--second {
-  display: none;
-}
-@media (min-width: 1200px) {
-  .promo__device-image--first,
-.promo__device-image--second {
-    display: block;
-  }
-}
-
-@media (min-width: 660px) {
-  .promo__device-image--third {
-    position: absolute;
-    top: 0;
-    left: -310px;
-  }
-}
-@media (min-width: 1200px) {
-  .promo__device-image--third {
-    position: static;
-  }
 }
 
 .tariff__compare__table {
