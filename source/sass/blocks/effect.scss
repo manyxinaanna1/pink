@@ -1,0 +1,69 @@
+.effect {
+  display: none;
+  @media (min-width: $breakpoint-medium) {
+    display: block;
+    text-align: left;
+  }
+}
+.effect__wrapper {
+  display: flex;
+}
+.effect__image {
+  width: 238px;
+  height: 276px;
+  background: url(../img/effect-tablet.png);
+  background-repeat: no-repeat;
+
+  @media (min-width: $breakpoint-large) {
+    width: 298px;
+    height: 345px;
+    background: url(../img/effect-desktop.png);
+  }
+}
+.effect__text {
+  width: 310px;
+  margin-left: 72px;
+  @media (min-width: $breakpoint-large) {
+    width: 534px;
+    margin-left: 71px;
+  }
+}
+.effect__title {
+  width: 168px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-top: 37px;
+  font-size: 30px;
+  line-height: 36px;
+  @media (min-width: $breakpoint-large) {
+
+    width: 100%;
+    margin-bottom: 31px;
+    padding-top: 95px;
+    line-height: 30px;
+  }
+}
+
+.effect__paragraph {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: $breakpoint-large) {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.effect__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-purple;
+  text-decoration: underline;
+  @media (min-width: $breakpoint-large) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

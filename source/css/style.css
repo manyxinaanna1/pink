@@ -36,14 +36,15 @@ img {
 }
 
 .adventuries__list {
-  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
   padding: 0;
   margin: 0;
   min-height: 245px;
+  list-style-type: none;
   text-align: left;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
+  background-color: #F2F2F2;
 }
 @media (min-width: 1200px) {
   .adventuries__list {
@@ -114,16 +115,85 @@ img {
   }
 }
 
+.adventuries__title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.adventuries__paragraph {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.blockquote-wrapper {
+  display: flex;
+  position: relative;
+}
+@media (min-width: 660px) {
+  .blockquote-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+
+.blockquote__image {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .blockquote__image {
+    display: block;
+    width: 79px;
+    height: 63px;
+    margin: 0 auto;
+    background-image: url(../img/quotes.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
 .blockquote__author {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
 }
+@media (min-width: 660px) {
+  .blockquote__author {
+    font-size: 20px;
+  }
+}
 
 .blockquote__blockquote {
+  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
+}
+@media (min-width: 1200px) {
+  .blockquote__blockquote {
+    padding-top: 58px;
+  }
+}
+@media (min-width: 660px) {
+  .blockquote__blockquote {
+    width: 688px;
+    font-size: 18px;
+  }
+}
+
+.blockquote__paragraph {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .blockquote__paragraph {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .blockquote__paragraph {
+    width: 688px;
+  }
 }
 
 .button {
@@ -160,7 +230,7 @@ img {
 }
 @media (min-width: 660px) {
   .container {
-    width: 588px;
+    width: 620px;
   }
 }
 @media (min-width: 1200px) {
@@ -230,6 +300,89 @@ img {
   line-height: 24px;
   font-weight: 300;
   padding-bottom: 38px;
+}
+
+.effect {
+  display: none;
+}
+@media (min-width: 660px) {
+  .effect {
+    display: block;
+    text-align: left;
+  }
+}
+
+.effect__wrapper {
+  display: flex;
+}
+
+.effect__image {
+  width: 238px;
+  height: 276px;
+  background: url(../img/effect-tablet.png);
+  background-repeat: no-repeat;
+}
+@media (min-width: 1200px) {
+  .effect__image {
+    width: 298px;
+    height: 345px;
+    background: url(../img/effect-desktop.png);
+  }
+}
+
+.effect__text {
+  width: 310px;
+  margin-left: 72px;
+}
+@media (min-width: 1200px) {
+  .effect__text {
+    width: 534px;
+    margin-left: 71px;
+  }
+}
+
+.effect__title {
+  width: 168px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-top: 37px;
+  font-size: 30px;
+  line-height: 36px;
+}
+@media (min-width: 1200px) {
+  .effect__title {
+    width: 100%;
+    margin-bottom: 31px;
+    padding-top: 95px;
+    line-height: 30px;
+  }
+}
+
+.effect__paragraph {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 24px;
+}
+@media (min-width: 1200px) {
+  .effect__paragraph {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.effect__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: #D22856;
+  text-decoration: underline;
+}
+@media (min-width: 1200px) {
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .page__footer__logo__image {
@@ -448,18 +601,45 @@ img {
 }
 
 .promo__paragraph {
+  margin: 0;
+  font-weight: 300;
   font-size: 24px;
   line-height: 29px;
 }
-
-.promo__title {
-  font-size: 18px;
-  line-height: 24px;
+@media (min-width: 660px) {
+  .promo__paragraph {
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+@media (min-width: 1200px) {
+  .promo__paragraph {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
-.promo__item__paragraph {
-  font-size: 14px;
-  line-height: 24px;
+.slider-controls {
+  position: absolute;
+  top: 155px;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-button {
+  background-image: url(../img/icons/arrow.svg);
+  width: 22px;
+  height: 41px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+}
+
+.slider-next {
+  transform: rotate(180deg);
 }
 
 .tariff__compare__table {

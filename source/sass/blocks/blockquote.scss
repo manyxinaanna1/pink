@@ -1,10 +1,60 @@
+
+.blockquote-wrapper {
+  display: flex;
+  position: relative;
+  @media (min-width: $breakpoint-medium) {
+    flex-direction: column-reverse;
+  }
+
+}
+
+.blockquote__image {
+  display: none;
+  @media (min-width: $breakpoint-large) {
+    display: block;
+    width: 79px;
+    height: 63px;
+    margin: 0 auto;
+    background-image: url(../img/quotes.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
 .blockquote__author {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
+    @media (min-width: $breakpoint-medium) {
+      font-size: 20px;
+    }
 }
 .blockquote__blockquote {
+  margin: 0 auto;
     font-size: 14px;
     line-height: 30px;
+    @media (min-width: $breakpoint-large) {
+      padding-top: 58px;
+    }
+    @media (min-width: $breakpoint-medium) {
+      width: 688px;
+      font-size: 18px;
+    }
+}
+
+.blockquote__paragraph {
+  display: none;
+}
+.blockquote__paragraph {
+  @media (min-width: $breakpoint-medium) {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  @media (min-width: $breakpoint-large) {
+    width: 688px;
+
+
+  }
+
 }
