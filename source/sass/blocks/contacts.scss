@@ -1,8 +1,38 @@
-.contasts__paragraph__guestions {
+.contasts__guestions {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
+  @media (min-width: $breakpoint-medium) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+  @media (min-width: $breakpoint-medium) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
+ .contacts__list {
+  margin: o;
+  padding: 0;
+  list-style-type: none;
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+}
+@media (min-width: $breakpoint-medium) {
+  .contacts__item {
+      margin-right: 87px;
+  }
+}
+@media (min-width: $breakpoint-medium) {
+.contacts__item:last-child   {
+    margin-right: 0;
+  }
+}
+
+
 .contasts__paragraph {
   font-size: 18px;
   line-height: 25px;
@@ -17,4 +47,11 @@
   color: #D22856;
   text-decoration: none;
   font-style: normal;
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+  height: 362px;
+  border: none;
 }
