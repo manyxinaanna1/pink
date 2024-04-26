@@ -1,11 +1,10 @@
 
 .blockquote-wrapper {
-  display: flex;
   position: relative;
+  display: flex;
   @media (min-width: $breakpoint-medium) {
     flex-direction: column-reverse;
   }
-
 }
 
 .blockquote__image {
@@ -31,11 +30,12 @@
 }
 .blockquote__blockquote {
   margin: 0 auto;
-    font-size: 14px;
-    line-height: 30px;
+  font-size: 14px;
+  line-height: 30px;
     @media (min-width: $breakpoint-large) {
       padding-top: 58px;
     }
+
     @media (min-width: $breakpoint-medium) {
       width: 688px;
       font-size: 18px;
@@ -45,16 +45,15 @@
 .blockquote__paragraph {
   display: none;
 }
+
 .blockquote__paragraph {
   @media (min-width: $breakpoint-medium) {
     display: block;
     font-size: 14px;
     line-height: 30px;
   }
+
   @media (min-width: $breakpoint-large) {
     width: 688px;
-
-
   }
-
 }

@@ -5,9 +5,11 @@
     text-align: left;
   }
 }
+
 .effect__wrapper {
   display: flex;
 }
+
 .effect__image {
   width: 238px;
   height: 276px;
@@ -20,6 +22,7 @@
     background: url(../img/effect-desktop.png);
   }
 }
+
 .effect__text {
   width: 310px;
   margin-left: 72px;
@@ -28,6 +31,7 @@
     margin-left: 71px;
   }
 }
+
 .effect__title {
   width: 168px;
   margin: 0;
@@ -36,7 +40,6 @@
   font-size: 30px;
   line-height: 36px;
   @media (min-width: $breakpoint-large) {
-
     width: 100%;
     margin-bottom: 31px;
     padding-top: 95px;
@@ -49,7 +52,6 @@
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 24px;
-
   @media (min-width: $breakpoint-large) {
     margin-bottom: 24px;
     font-size: 18px;

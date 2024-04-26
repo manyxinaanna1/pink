@@ -1,22 +1,23 @@
 .slider-controls {
   position: absolute;
   top: 155px;
-  width: 100%;
-  transform: translateY(-50%);
+  left: 0;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  transform: translateY(-50%);
 }
-.slider-button {
 
-  background-image: url(../img/icons/arrow.svg);
+.slider-button {
   width: 22px;
   height: 41px;
-
+  background-image: url(../img/icons/arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
   border: none;
   background-color: transparent;
 }
+
 .slider-next {
   transform: rotate(180deg);
 }
