@@ -1,0 +1,41 @@
+
+
+.form__group {
+  margin: 0;
+}
+
+.field-group {
+  padding: 0;
+  border: none;
+}
+
+.field-group__list {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  list-style: none;
+}
+
+@media (min-width: $breakpoint-medium) {
+  .field {
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 26px;
+    color: $color-purple;
+    font-family: $font;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+.field__lead {
+  text-transform: uppercase;
+}
+
+.field-group__heading {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-purple;
+}

@@ -40,16 +40,87 @@
       </nav>
       <p class="page-header__promo">Конкурс на самое безбашенное путешествие с Пинк</p>
 
-
     </div><!--container-->
   </header>
     <main>
-      <section class="share">
+      <header class="share">
         <h1 class="visually-hidden"> Форма регистрации в приложении Pink</h1>
         <p class="share__paragraph">Поделитесь своей историей и получите
           шанс выиграть ценный приз — 1000
           миль на вашу бонусную карту!</p>
-      </section>
+
+        </header>
+        <section class="form__section">
+          <form class="form__container container" method="post" action="https://echo.htmlacademy.ru/">
+            <fieldset class="form__group form__group--cat field-group">
+              <legend class="visually-hidden">Данные пользователя приложения</legend>
+              <ul class="field-group__list">
+                <li class="field-group__item">
+                  <label class="field">
+                    <span class="field__lead">ФАМИЛИЯ:</span>
+                    <input class="field__input" name="lastname" type="text" placeholder="Укажите фамилию *" required="">
+                  </label>
+                  </li>
+                <li class="field-group__item">
+                  <label class="field">
+                    <span class="field__lead">ИМЯ:</span>
+                    <input class="field__input" name="name" type="text" placeholder="Введите ваше имя *" required="">
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="field">
+                    <span class="field__lead">ОТЧЕСТВО:</span>
+                    <input class="field__input" name="patronical-name" type="text" placeholder="Ну и отчество тоже">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__group form__group--achievements field-group">
+              <legend class="field-group__heading">
+                <span>Ваши безбашенные достижения в путешествии</span>
+              </legend>
+
+              <ul class="field-group__list field-group__list--additional">
+                <li class="field-group__item">
+                  <label class="control control--checkbox">
+                    <input class="control__input" name="additional" type="checkbox" value="sweetener" checked="">
+                    <span class="control__lead">Сделал селфи с акулой</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--checkbox">
+                    <input class="control__input" name="additional" type="checkbox" value="water">
+                    <span class="control__lead">Обгорел на пляже</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--checkbox">
+                    <input class="control__input" name="additional" type="checkbox" value="milk">
+                    <span class="control__lead">Видел Чака Норриса</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--checkbox">
+                    <input class="control__input" name="additional" type="checkbox" value="vitamins">
+                    <span class="control__lead">Накупил сувениров/span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--checkbox">
+                    <input class="control__input" name="additional" type="checkbox" value="vitamins">
+                    <span class="control__lead">Удержал башню/span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--checkbox">
+                    <input class="control__input" name="additional" type="checkbox" value="vitamins">
+                    <span class="control__lead">Разгромил отель/span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </section>
 
     </main>
     <footer class="page-footer">
