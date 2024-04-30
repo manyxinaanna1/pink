@@ -487,6 +487,10 @@ img {
   text-transform: uppercase;
 }
 
+.field-group__item {
+  text-align: left;
+}
+
 .field-group__heading {
   font-size: 14px;
   line-height: 18px;
