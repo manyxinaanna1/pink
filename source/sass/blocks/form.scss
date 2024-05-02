@@ -12,7 +12,6 @@
 .field-group__list {
   margin: 0;
   padding: 0;
-  clear: both;
   list-style: none;
 }
 
@@ -33,7 +32,9 @@
 .field__lead {
   text-transform: uppercase;
 }
+
 .field-group__item {
+  margin-bottom: 47px;
   text-align: left;
 }
 
@@ -42,3 +43,11 @@
   line-height: 18px;
   color: $color-purple;
 }
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 22px;
+}
+
+

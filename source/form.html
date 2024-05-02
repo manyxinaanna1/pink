@@ -51,7 +51,59 @@
 
         </header>
         <section class="form__section">
+
+
+
+
+
+
           <form class="form__container container" method="post" action="https://echo.htmlacademy.ru/">
+
+            <fieldset class="form__group form__group--additional field-group">
+              <legend class="field-group__heading">
+                <span>Ваши безбашенные достижения в путешествии</span>
+              </legend>
+
+              <ul class="field-group__list field-group__list--additional">
+                <li class="field-group__item">
+                  <label class="control control--checkbox">
+                    <input class="control__input" name="additional" type="checkbox" value="make" checked="">
+                    <span class="control__lead">Сделал селфи с акулой</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--checkbox">
+                    <input class="control__input" name="additional" type="checkbox" value="burned">
+                    <span class="control__lead">Обгорел на пляже</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--checkbox">
+                    <input class="control__input" name="additional" type="checkbox" value="see">
+                    <span class="control__lead">Видел Чака Норриса</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--checkbox">
+                    <input class="control__input" name="additional" type="checkbox" value="buy">
+                    <span class="control__lead">Накупил сувениров</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--checkbox">
+                    <input class="control__input" name="additional" type="checkbox" value="buy">
+                    <span class="control__lead">Накупил сувениров</span>
+                  </label>
+                </li>
+                <li class="field-group__item">
+                  <label class="control control--checkbox">
+                    <input class="control__input" name="destroy" type="checkbox" value="buy">
+                    <span class="control__lead">Разгромил отель</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
             <fieldset class="form__group form__group--cat field-group">
               <legend class="visually-hidden">Данные пользователя приложения</legend>
               <ul class="field-group__list">
@@ -75,50 +127,51 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__group form__group--achievements field-group">
-              <legend class="field-group__heading">
-                <span>Ваши безбашенные достижения в путешествии</span>
-              </legend>
 
-              <ul class="field-group__list field-group__list--additional">
+            <fieldset class="form__group form__group--contacts field-group">
+              <legend class="visually-hidden">  Контактные данные путешественника </legend>
+
+              <ul class="field-group__list field-group__list--contacts">
                 <li class="field-group__item">
-                  <label class="control control--checkbox">
-                    <input class="control__input" name="additional" type="checkbox" value="make" checked="">
-                    <span class="control__lead">Сделал селфи с акулой</span>
+                  <label class="field field--icon">
+                    <span class="field__lead">НОМЕР ТЕЛЕФОНА</span>
+                    <input class="field__input" name="phone" type="tel" placeholder="Номер, пожалуйста">
                   </label>
                 </li>
                 <li class="field-group__item">
-                  <label class="control control--checkbox">
-                    <input class="control__input" name="additional" type="checkbox" value="burned" checked="">
-                    <span class="control__lead">Обгорел на пляже</span>
+                  <label class="field field--icon">
+                    <span class="field__lead">АДРЕС ПОЧТЫ</span>
+                    <input class="field__input" name="e-mail" type="email" placeholder="Введите почту *" required="">
+                  </label>
+                </li>
+
+              </ul>
+            </fieldset>
+            <fieldset class="form__group form__group--target field-group field-group--target">
+              <legend class="visually-hidden">С каким приложением путешествовали?</legend>
+
+              <ul class="field-group__list field-group__list--target">
+                <li class="field-group__item">
+                  <label class="control control--radio">
+                    <input class="control__input" name="application" type="radio" value="ios" checked="">
+                    <span class="control__lead">Pink для iOS</span>
                   </label>
                 </li>
                 <li class="field-group__item">
-                  <label class="control control--checkbox">
-                    <input class="control__input" name="additional" type="checkbox" value="see">
-                    <span class="control__lead">Видел Чака Норриса</span>
+                  <label class="control control--radio">
+                    <input class="control__input" name="application" type="radio" value="android">
+                    <span class="control__lead">Pink на Android</span>
                   </label>
                 </li>
                 <li class="field-group__item">
-                  <label class="control control--checkbox">
-                    <input class="control__input" name="additional" type="checkbox" value="buy">
-                    <span class="control__lead">Накупил сувениров </span>
-                  </label>
-                </li>
-                <li class="field-group__item">
-                  <label class="control control--checkbox">
-                    <input class="control__input" name="additional" type="checkbox" value="keep" checked="">
-                    <span class="control__lead">Удержал башню </span>
-                  </label>
-                </li>
-                <li class="field-group__item">
-                  <label class="control control--checkbox">
-                    <input class="control__input" name="additional" type="checkbox" value="destroy">
-                    <span class="control__lead">Разгромил отель </span>
+                  <label class="control control--radio">
+                    <input class="control__input" name="application" type="radio" value="windows-phone">
+                    <span class="control__lead">Windows Phone</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
+
           </form>
         </section>
 
