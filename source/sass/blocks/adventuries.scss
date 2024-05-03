@@ -11,11 +11,7 @@
   padding: 0;
   min-height: 245px;
   list-style-type: none;
-  text-align: left;
   background-color: $color-light-gray;
-    @media (min-width: $breakpoint-large) {
-      text-align: center;
-    }
 }
 .adventuries__item {
 

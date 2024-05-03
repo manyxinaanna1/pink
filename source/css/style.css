@@ -43,13 +43,7 @@ img {
   padding: 0;
   min-height: 245px;
   list-style-type: none;
-  text-align: left;
   background-color: #F2F2F2;
-}
-@media (min-width: 1200px) {
-  .adventuries__list {
-    text-align: center;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -349,7 +343,6 @@ img {
 @media (min-width: 660px) {
   .effect {
     display: block;
-    text-align: left;
   }
 }
 
@@ -462,6 +455,11 @@ img {
   padding: 0;
   border: none;
 }
+@media (min-width: 660px) {
+  .field-group {
+    border: 2px solid #E5E5E5;
+  }
+}
 
 .field-group__list {
   margin: 0;
@@ -488,19 +486,115 @@ img {
 
 .field-group__item {
   margin-bottom: 47px;
-  text-align: left;
 }
 
 .field-group__heading {
   font-size: 14px;
   line-height: 18px;
   color: #D22856;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 660px) {
+  .field-group__heading {
+    line-height: 30px;
+  }
+}
+
+.field-group__heading--contacts {
+  display: none;
+}
+@media (min-width: 660px) {
+  .field-group__heading--contacts {
+    display: block;
+  }
 }
 
 .control {
   position: relative;
-  display: block;
-  padding-left: 22px;
+  z-index: 0;
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 22px;
+  color: #283645;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 18x;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.control__input {
+  position: relative;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.control__lead {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 22px;
+  align-items: center;
+}
+
+.control__lead::before, .control__lead::after {
+  content: "";
+  height: 35px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.control__lead::before {
+  border: 1px solid #cdcdcd;
+}
+
+.control--checkbox .control__input:checked + .control__lead::after {
+  background-repeat: no-repeat;
+  background-position: calc(50% + 1px) 50%;
+  background-image: url("../img/icons/check.svg");
+  background-color: transparent;
+}
+
+@media (min-width: 1200px) {
+  .field-group__list--achievements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.field__input {
+  min-width: 100px;
+  padding: 23px 20px;
+  color: #283645;
+  border: 2px solid #E5E5E5;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.field__wrapper {
+  position: relative;
+}
+
+.field__icon {
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 12px);
+}
+
+.field--contacts {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 660px) {
+  .field--contacts {
+    flex-direction: column-reverse;
+  }
 }
 
 .page__header {
@@ -684,7 +778,6 @@ img {
   font-family: "Oswald", "Arial", sans-serif;
   background-color: #ffffff;
   color: #283645;
-  text-align: center;
 }
 
 .promo__paragraph {
@@ -800,7 +893,6 @@ img {
 .tariff__compare {
   font-size: 18px;
   line-height: 30px;
-  text-align: left;
 }
 
 .tariff__compare__header-none {
