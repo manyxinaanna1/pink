@@ -1,0 +1,8 @@
+.look {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  @media (min-width: $breakpoint-medium) {
+    font-size: 18px;
+  }
+}
