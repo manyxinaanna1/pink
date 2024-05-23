@@ -49,6 +49,53 @@
           Видите, как не хватает ваших?</p>
 
         </header>
+        <section class="page-main__section catalog-list">
+          <div class="catalog-list__container container">
+            <h2 class="visually-hidden">Список фотографий</h2>
+
+            <article class="catalog-list__item card">
+              <picture class="card__img">
+                <source media="(min-width: 1200px)" srcset="./img/catalog/panorama-desktop.jpg 1x, ./img/catalog/panorama-desktop@2x.jpg 2x" width="1200" height="506">
+                <source media="(min-width: 660px)" srcset="./img/catalog/panorama-tablet.jpg 1x, ./img/catalog/panorama-tablet@2x.jpg 2x" width="660" height="509">
+                <img class="card__img" src="./img/catalog/panorama-mobile.jpg" srcset="./img/catalog/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама" aria-hidden="true">
+              </picture>
+              <div class="card__color">
+                <p class="card__name">Анна <span class="time">(5 минут назад)</span></p>
+                <p class="card__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+
+              <div class="like">
+                <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
+                <p class="like__description">Нравится: 356</p>
+              </div>
+            </div>
+            </article>
+
+            <article class="catalog-list__item card">
+              <picture class="card__img">
+                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-2-desktop.jpg 1x, ./img/catalog/photo-2-desktop@2x.jpg 2x" width="1200" height="506">
+                <source media="(min-width: 660px)" srcset="./img/catalog/panorama-tablet.jpg 1x, ./img/catalog/photo-2-tablet@2x.jpg 2x" width="660" height="509">
+                <img class="card__img" src="./img/catalog/photo-2-tablet.jpg" srcset="./img/catalog/photo-2-mobile@2x.jpg 2x" width="320" height="137" alt="Барабаны" aria-hidden="true">
+              </picture>
+              <div class="card__color">
+                <p class="card__name">Антон <span class="time">(12 часов назад)</span></p>
+                <p class="card__comment">Соседи будут рады!</p>
+                <div class="like">
+                  <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
+                  <p class="like__description">Нравится: 356</p>
+                </div>
+            </div>
+            </article>
+
+
+
+
+            <div class="catalog-list__item catalog-list__item--show-more show-more">
+              <p class="show-more__heading">Показать еще 100500 товаров</p>
+              <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
+              <a class="show-more__button button button--fixed button--secondary" href="#">Показать все</a>
+            </div>
+          </div>
+        </section>
 
     </main>
     <footer class="page-footer">

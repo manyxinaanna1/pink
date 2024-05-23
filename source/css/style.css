@@ -195,6 +195,36 @@ img {
   font-family: "Oswald", "Arial", sans-serif;
 }
 
+.card__img {
+  margin-bottom: 0;
+}
+
+.card__name {
+  padding-top: 25px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.card__color {
+  background-color: #f2f2f2;
+}
+
+.time {
+  margin-top: 25px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #283645;
+}
+
+.card__comment {
+  margin-bottom: 23px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+}
+
 .contasts__guestions {
   font-size: 24px;
   line-height: 29px;
@@ -622,6 +652,17 @@ img {
   color: #D22856;
 }
 
+.like {
+  display: flex;
+  gap: 18px;
+}
+
+.like__description {
+  font-size: 12px;
+  line-height: 24px;
+  color: #D22856;
+}
+
 .look {
   font-size: 14px;
   line-height: 30px;
@@ -875,7 +916,7 @@ img {
   margin-bottom: 53px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
   list-style-type: none;
 }
 
