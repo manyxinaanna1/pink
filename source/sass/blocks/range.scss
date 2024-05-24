@@ -1,0 +1,24 @@
+.range__scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 33px;
+  background-color: #DCDCDC;
+}
+.range__bar {
+  position: absolute;
+  height: 4px;
+  background-color: $color-purple;
+}
+.range__toggle {
+position: absolute;
+width: 20px;
+height: 20px;
+background: #EBEBEB;
+border: 2px solid $color-purple;
+border-radius: 50%;
+cursor: pointer;
+}
+.toggle--min {
+  top: -8px;
+  left: -10px;
+}

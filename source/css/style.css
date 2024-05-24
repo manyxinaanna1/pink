@@ -367,6 +367,16 @@ img {
   font-weight: 300;
 }
 
+.filter {
+  background-color: #F2F2F2;
+}
+
+.filter__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .effect {
   display: none;
 }
@@ -857,6 +867,17 @@ img {
   color: #283645;
 }
 
+.promition__paragraph {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+@media (min-width: 660px) {
+  .promition__paragraph {
+    font-size: 18px;
+  }
+}
+
 .promo__paragraph {
   margin: 0;
   font-weight: 300;
@@ -874,6 +895,34 @@ img {
     font-size: 50px;
     line-height: 68px;
   }
+}
+
+.range__scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 33px;
+  background-color: #DCDCDC;
+}
+
+.range__bar {
+  position: absolute;
+  height: 4px;
+  background-color: #D22856;
+}
+
+.range__toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #EBEBEB;
+  border: 2px solid #D22856;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle--min {
+  top: -8px;
+  left: -10px;
 }
 
 .share__paragraph {
