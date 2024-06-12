@@ -1,5 +1,9 @@
+.adventuries {
+  margin-bottom: 59px;
+}
+
 .adventures__color {
-  height: 90px;
+  min-height: 90px;
   background: linear-gradient(to bottom right, $color-white 50%, $color-light-gray 50%);
 }
 
@@ -14,10 +18,11 @@
   background-color: $color-light-gray;
 }
 .adventuries__item {
-
+  display: flex;
+  flex-direction: column;
   @media (min-width: $breakpoint-large) {
-    width: 252px;
-    margin-right: 50px;
+    width: 225px;
+    margin-right: 75px;
   }
 }
 
@@ -29,6 +34,9 @@
 
 .adventuries__item--third {
   position: relative;
+}
+.adventuries__image {
+  align-self: center;
 }
 
 .adventuries__image--first,
@@ -52,28 +60,35 @@
 }
 
 .adventuries__title {
+  margin: 0;
+  margin-bottom: 24px;
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
+  @media (min-width: $breakpoint-medium) {
+    text-align: left;
+  }
   @media (min-width: $breakpoint-large) {
+    margin-bottom: 35px;
     font-size: 30px;
     line-height: 30px;
+    text-align: center;
   }
 }
 
 .adventuries__paragraph {
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+  @media (min-width: $breakpoint-medium) {
+    text-align: left;
+  }
   @media (min-width: $breakpoint-large) {
     font-size: 18px;
     line-height: 30px;
+    text-align: center;
   }
 }
 
-.adventuries__title {
-  font-size: 18px;
-  line-height: 24px;
-}
-.adventuries__paragraph {
-  font-size: 14px;
-  line-height: 24px;
-}
+
+

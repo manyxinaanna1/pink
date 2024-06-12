@@ -30,8 +30,12 @@ img {
   height: auto;
 }
 
+.adventuries {
+  margin-bottom: 59px;
+}
+
 .adventures__color {
-  height: 90px;
+  min-height: 90px;
   background: linear-gradient(to bottom right, #ffffff 50%, #F2F2F2 50%);
 }
 
@@ -46,10 +50,14 @@ img {
   background-color: #F2F2F2;
 }
 
+.adventuries__item {
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 1200px) {
   .adventuries__item {
-    width: 252px;
-    margin-right: 50px;
+    width: 225px;
+    margin-right: 75px;
   }
 }
 
@@ -61,6 +69,10 @@ img {
 
 .adventuries__item--third {
   position: relative;
+}
+
+.adventuries__image {
+  align-self: center;
 }
 
 .adventuries__image--first,
@@ -88,35 +100,42 @@ img {
 }
 
 .adventuries__title {
+  margin: 0;
+  margin-bottom: 24px;
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
+}
+@media (min-width: 660px) {
+  .adventuries__title {
+    text-align: left;
+  }
 }
 @media (min-width: 1200px) {
   .adventuries__title {
+    margin-bottom: 35px;
     font-size: 30px;
     line-height: 30px;
+    text-align: center;
   }
 }
 
 .adventuries__paragraph {
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+}
+@media (min-width: 660px) {
+  .adventuries__paragraph {
+    text-align: left;
+  }
 }
 @media (min-width: 1200px) {
   .adventuries__paragraph {
     font-size: 18px;
     line-height: 30px;
+    text-align: center;
   }
-}
-
-.adventuries__title {
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.adventuries__paragraph {
-  font-size: 14px;
-  line-height: 24px;
 }
 
 .blockquote-wrapper {
@@ -149,6 +168,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  text-align: center;
 }
 @media (min-width: 660px) {
   .blockquote__author {
@@ -160,6 +180,7 @@ img {
   margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
 }
 @media (min-width: 1200px) {
   .blockquote__blockquote {
@@ -176,12 +197,12 @@ img {
 .blockquote__paragraph {
   display: none;
 }
-
 @media (min-width: 660px) {
   .blockquote__paragraph {
     display: block;
     font-size: 14px;
     line-height: 30px;
+    text-align: center;
   }
 }
 @media (min-width: 1200px) {
@@ -383,6 +404,7 @@ img {
 @media (min-width: 660px) {
   .effect {
     display: block;
+    background-color: #F2F2F2;
   }
 }
 
@@ -883,6 +905,7 @@ img {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  text-align: center;
 }
 @media (min-width: 660px) {
   .promo__paragraph {

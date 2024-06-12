@@ -24,6 +24,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
+    text-align: center;
     @media (min-width: $breakpoint-medium) {
       font-size: 20px;
     }
@@ -32,6 +33,7 @@
   margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
     @media (min-width: $breakpoint-large) {
       padding-top: 58px;
     }
@@ -44,16 +46,15 @@
 
 .blockquote__paragraph {
   display: none;
-}
-
-.blockquote__paragraph {
   @media (min-width: $breakpoint-medium) {
     display: block;
     font-size: 14px;
     line-height: 30px;
+    text-align: center;
   }
 
   @media (min-width: $breakpoint-large) {
     width: 688px;
   }
 }
+
