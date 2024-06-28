@@ -1,42 +1,31 @@
 .page__header {
+  background-color: $color-graphite-gray;
   color: $color-white;
+  background-repeat: no-repeat;
+  background-image: url('../img/bg-mobile.jpg');
+  min-height: 462px;
+
+    @media (min-width: $breakpoint-medium) {
+      min-height: 729px;
+      background-image: url('../img/bg-tablet.jpg');
+    }
+    @media (min-width: $breakpoint-large) {
+      min-height: 853px;
+      background-image: url('../img/bg-desktop.jpg');
+    }
 }
 .page__header--image {
   position: relative;
 }
-.page__header--image::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -2;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  background-image: url('../img/bg-mobile.jpg');
-    @media (min-width: $breakpoint-medium) {
-      background-image: url('../img/bg-tablet.jpg');
-    }
-    @media (min-width: $breakpoint-large) {
-      background-image: url('../img/bg-desktop.jpg');
-    }
-}
 
-.header__image {
-  min-height: 462px;
-  @media (min-width: $breakpoint-medium) {
-    min-height: 729px;
-  }
-  @media (min-width: $breakpoint-large) {
-    min-height: 853px;
-  }
+.page-header__nav {
+  background: rgba (0, 0, 0, 0.3);
 }
 
 .page-header__bar {
   z-index: 1;
   display: flex;
-  gap: 156px;
+  justify-content: space-between;
   padding-top: 22px;
   padding-bottom: 21px;
 }
@@ -44,7 +33,6 @@
 .page-header__toggler {
     width: 50px;
     height: 24px;
-    margin-left: auto;
     background-color: transparent;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -127,31 +115,11 @@
 }
 
 .page-header__promo {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: $color-white;
 }
 
-.phone {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 320px;
-  height: 286px;
-  background-image: url('../img/phone-mobile.png');
-  background-repeat: no-repeat;
 
-  @media (min-width: $breakpoint-medium) {
-    left: -150px;
-    width: 660px;
-    height: 545px;
-    background-image: url('../img/phone-tablet.png');
-  }
-  @media (min-width: $breakpoint-large) {
-    left: -150px;
-    width: 1050px;
-    height: 645px;
-    background-image: url('../img/phone-desktop.png');
-    }
-}

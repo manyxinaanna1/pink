@@ -211,6 +211,10 @@ img {
   }
 }
 
+.page__body {
+  margin: 0;
+}
+
 .button {
   display: inline-block;
   font-family: "Oswald", "Arial", sans-serif;
@@ -707,54 +711,37 @@ img {
 }
 
 .page__header {
+  background-color: #283645;
   color: #ffffff;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-mobile.jpg");
+  min-height: 462px;
+}
+@media (min-width: 660px) {
+  .page__header {
+    min-height: 729px;
+    background-image: url("../img/bg-tablet.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .page__header {
+    min-height: 853px;
+    background-image: url("../img/bg-desktop.jpg");
+  }
 }
 
 .page__header--image {
   position: relative;
 }
 
-.page__header--image::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -2;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  background-image: url("../img/bg-mobile.jpg");
-}
-@media (min-width: 660px) {
-  .page__header--image::after {
-    background-image: url("../img/bg-tablet.jpg");
-  }
-}
-@media (min-width: 1200px) {
-  .page__header--image::after {
-    background-image: url("../img/bg-desktop.jpg");
-  }
-}
-
-.header__image {
-  min-height: 462px;
-}
-@media (min-width: 660px) {
-  .header__image {
-    min-height: 729px;
-  }
-}
-@media (min-width: 1200px) {
-  .header__image {
-    min-height: 853px;
-  }
+.page-header__nav {
+  background: rgba 0, 0, 0, 0.3;
 }
 
 .page-header__bar {
   z-index: 1;
   display: flex;
-  gap: 156px;
+  justify-content: space-between;
   padding-top: 22px;
   padding-bottom: 21px;
 }
@@ -762,7 +749,6 @@ img {
 .page-header__toggler {
   width: 50px;
   height: 24px;
-  margin-left: auto;
   background-color: transparent;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -850,36 +836,11 @@ img {
 }
 
 .page-header__promo {
+  margin: 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-}
-
-.phone {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 320px;
-  height: 286px;
-  background-image: url("../img/phone-mobile.png");
-  background-repeat: no-repeat;
-}
-@media (min-width: 660px) {
-  .phone {
-    left: -150px;
-    width: 660px;
-    height: 545px;
-    background-image: url("../img/phone-tablet.png");
-  }
-}
-@media (min-width: 1200px) {
-  .phone {
-    left: -150px;
-    width: 1050px;
-    height: 645px;
-    background-image: url("../img/phone-desktop.png");
-  }
+  color: #ffffff;
 }
 
 .page__body {
@@ -1002,28 +963,27 @@ img {
   margin-right: 14px;
 }
 
-.tariff__compare__table {
+.tariff-compare__table {
   margin: 0 auto 43px;
   padding: 0 20px;
-  width: 832px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-collapse: collapse;
   transform: translateX(-255px);
   overflow: hidden;
 }
 
-.tariff__compare__header,
-.tariff__compare {
+.tariff-compare__header,
+.tariff-compare {
   border: 2px solid #E5E5E5;
 }
 
-.tariff__compare__header,
-.tariff__compare {
+.tariff-compare__header,
+.tariff-compare {
   width: 234px;
   min-height: 59px;
 }
 
-.tariff__compare__header {
+.tariff-compare__header {
   background-color: #283645;
   color: #ffffff;
   text-transform: uppercase;
@@ -1032,43 +992,43 @@ img {
   line-height: 30px;
 }
 
-.tariff__compare--element {
+.tariff-compare--element {
   display: block;
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
 }
 
-.tariff__compare {
+.tariff-compare {
   font-size: 18px;
   line-height: 30px;
 }
 
-.tariff__compare__header-none {
+.tariff-compare__header--none {
   background-color: #ffffff;
   border: none;
 }
 
-.tariff__compare__header--hit {
+.tariff-compare__header--hit {
   background-image: url("../img/hit-desktop.png");
   background-repeat: no-repeat;
 }
 @media (min-width: 660px) {
-  .tariff__compare__header--hit {
+  .tariff-compare__header--hit {
     background-image: url("../img/hit-tablet.png");
   }
 }
 @media (min-width: 660px) {
-  .tariff__compare__header--hit {
+  .tariff-compare__header--hit {
     background-image: url("../img/hit-desktop.png");
   }
 }
 
-.tariff__compare-name {
+.tariff-compare--name {
   padding: 23px 22px;
 }
 
-.tariff__compare-yes {
+.tariff-compare--yes {
   background-image: url("../img/icons/yes.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1076,7 +1036,7 @@ img {
   padding-bottom: 19px;
 }
 
-.tariff__compare-no {
+.tariff-compare--no {
   background-image: url("../img/icons/no.svg");
   background-repeat: no-repeat;
   background-position: center;

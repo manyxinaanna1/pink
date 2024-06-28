@@ -9,8 +9,8 @@
   </head>
   <body class="page__body">
     <header class="page__header page__header--image">
-      <div class="header__image container">
-      <nav class="page-header__nav page-header__nav--main page-header__nav--closed">
+
+      <nav class="page-header__nav container page-header__nav--main  page-header__nav--closed">
         <div class="page-header__bar">
           <a class="page-header__logo logo">
             <picture class="logo__image">
@@ -22,7 +22,7 @@
           <button class="page-header__toggler" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-      </div>
+        </div>
       <ul class="page-header__menu site-menu site-menu--main">
         <li class="site-menu__item site-menu__item--active">
           <a class="site-menu__link">Главная</a>
@@ -38,15 +38,19 @@
         </li>
       </ul>
       </nav>
-      <p class="page-header__promo">Взгляните на жизнь иначе!</p>
-      <div class="phone"></div>
+      <h1 class="page-header__promo">Взгляните на жизнь иначе!</h1>
+      <picture class="header__phone">
+        <source media="(min-width: 1200px)" srcset="img/phone-desktop.png" width="1050" height="645">
+        <source media="(min-width: 660px)" srcset="img/phone-tablet.png" width="660" height="545">
+        <img class="header__phone" src="img/phone-mobile.png" width="320" height="286" alt="Изображение телефона">
+      </picture>
 
-    </div><!--container-->
-    </header>
-    <main>
-      <section class="download">
+
+
+
+      <div class="download">
         <div class="container">
-          <h1 class="visually-hidden">Сайт приложения Pink</h1>
+
           <h2 class="visually-hidden">Скачать приложение</h2>
           <button class="download__button button">Скачать приложение</button>
           <ul class="download__list">
@@ -62,7 +66,8 @@
           </ul>
           <p class="download__paragraph">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-      </section>
+      </header>
+      <main>
       <section class="promo">
         <div class="container">
           <p class="promo__paragraph">Устали от серости мегаполиса?</p>
@@ -140,36 +145,36 @@
       <section class="tariff">
         <div class="container">
           <h2 class="visually-hidden">Сравнение тарифов</h2>
-          <table class="tariff__compare__table">
+          <table class="tariff-compare__table">
             <tr>
-              <th class="tariff__compare__header tariff__compare__header-none"> </th>
-              <th class="tariff__compare__header">База
-                <span class="tariff__compare--element">1,99 USD</span>
+              <th class="tariff-compare__header tariff-compare__header--none"> </th>
+              <th class="tariff-compare__header">База
+                <span class="tariff-compare--element">1,99 USD</span>
                </th>
-              <th class="tariff__compare__header tariff__compare__header--hit">СТАНДАРТ
-                <span class="tariff__compare--element">3,99 USD</span>
+              <th class="tariff-compare__header tariff-compare__header--hit">СТАНДАРТ
+                <span class="tariff-compare--element">3,99 USD</span>
               </th>
-              <th class="tariff__compare__header">АНЛИМ
-                <span class="tariff__compare--element">9,99 USD</span>
+              <th class="tariff-compare__header">АНЛИМ
+                <span class="tariff-compare--element">9,99 USD</span>
               </th>
             </tr>
             <tr>
-              <td class="tariff__compare tariff__compare-name">Розовый фильтр</td>
-              <td class="tariff__compare tariff__compare-yes"><span class="visually-hidden"> Да</span></td>
-              <td class="tariff__compare tariff__compare-yes"><span class="visually-hidden"> Да</span></td>
-              <td class="tariff__compare tariff__compare-yes"><span class="visually-hidden"> Да</span></td>
+              <td class="tariff-compare tariff-compare--name">Розовый фильтр</td>
+              <td class="tariff-compare tariff-compare--yes"><span class="visually-hidden"> Да</span></td>
+              <td class="tariff-compare tariff-compare--yes"><span class="visually-hidden"> Да</span></td>
+              <td class="tariff-compare tariff-compare--yes"><span class="visually-hidden"> Да</span></td>
             </tr>
             <tr>
-              <td class="tariff__compare tariff__compare-name">Смайлики</td>
-              <td class="tariff__compare tariff__compare-no"><span class="visually-hidden"> Нет</span></td>
-              <td class="tariff__compare tariff__compare-yes"><span class="visually-hidden"> Да</span></td>
-              <td class="tariff__compare tariff__compare-yes"><span class="visually-hidden"> Да</span></td>
+              <td class="tariff-compare tariff-compare--name">Смайлики</td>
+              <td class="tariff-compare tariff-compare--no"><span class="visually-hidden"> Нет</span></td>
+              <td class="tariff-compare tariff-compare--yes"><span class="visually-hidden"> Да</span></td>
+              <td class="tariff-compare tariff-compare--yes"><span class="visually-hidden"> Да</span></td>
             </tr>
             <tr>
-              <td class="tariff__compare tariff__compare-name">Комментарии</td>
-              <td class="tariff__compare tariff__compare-no"><span class="visually-hidden"> Нет</span></td>
-              <td class="tariff__compare tariff__compare-no"><span class="visually-hidden"> Нет</span></td>
-              <td class="tariff__compare tariff__compare-yes"><span class="visually-hidden"> Да</span></td>
+              <td class="tariff-compare tariff-compare--name">Комментарии</td>
+              <td class="tariff-compare tariff-compare--no"><span class="visually-hidden"> Нет</span></td>
+              <td class="tariff-compare tariff-compare--no"><span class="visually-hidden"> Нет</span></td>
+              <td class="tariff-compare tariff-compare--yes"><span class="visually-hidden"> Да</span></td>
             </tr>
           </table>
         </div>
