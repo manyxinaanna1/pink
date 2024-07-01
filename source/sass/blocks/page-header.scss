@@ -3,14 +3,14 @@
   color: $color-white;
   background-repeat: no-repeat;
   background-image: url('../img/bg-mobile.jpg');
-  min-height: 462px;
+  background-size: cover;
 
-    @media (min-width: $breakpoint-medium) {
-      min-height: 729px;
+    @media (min-width: $breakpoint-small) {
+
       background-image: url('../img/bg-tablet.jpg');
     }
     @media (min-width: $breakpoint-large) {
-      min-height: 853px;
+
       background-image: url('../img/bg-desktop.jpg');
     }
 }
@@ -64,62 +64,27 @@
 }
 
 .page-header__nav--closed .page-header__menu {
-  @media (max-width: $breakpoint-small-down) {
+  @media (max-width: $breakpoint-medium-down) {
     display: none;
   }
 }
 
-.site-menu {
+
+
+.header__title {
   margin: 0;
-  padding: 0;
-  list-style-type: none;
-  font-size: 18px;
-  line-height: 32px;
-  @media (min-width: $breakpoint-large) {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    line-height: 18px;
-    }
-}
-
-.site-menu__item:first-child {
-  @media (max-width: $breakpoint-small-down) {
-    border-top: 1px solid #000000;
-  }
-}
-
-.site-menu__item {
-  @media (max-width: $breakpoint-small-down) {
-    border-bottom: 1px solid #000000;
-  }
-}
-
-.site-menu__item--active {
-  @media (min-width: $breakpoint-medium) {
-    position: relative;
-  }
-}
-
-.site-menu__link {
-  display: block;
-  padding: 25px;
-  text-decoration: none;
-  color: $color-white;
-  text-transform: uppercase;
-  background-color: $color-graphite-gray;
-  @media (min-width: $breakpoint-large) {
-    text-transform: capitalize;
-    background-color: transparent;
-    }
-}
-
-.page-header__promo {
-  margin: 0;
+  margin-bottom: 34px;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  text-align: center;
   color: $color-white;
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 39px;
+  };
+  @media (min-width: $breakpoint-large) {
+    margin-bottom: 51px;
+  }
 }
 
 

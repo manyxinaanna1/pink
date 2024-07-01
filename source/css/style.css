@@ -50,6 +50,26 @@ img {
   background-color: #F2F2F2;
 }
 
+.adventuries__list::before {
+  content: "";
+  display: none;
+}
+@media (min-width: 660px) {
+  .adventuries__list::before {
+    content: "";
+    display: block;
+    width: 268px;
+    height: 547px;
+    background-image: url("../img/iphone3-medium.png");
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 1200px) {
+  .adventuries__list::before {
+    display: none;
+  }
+}
+
 .adventuries__item {
   display: flex;
   flex-direction: column;
@@ -61,41 +81,59 @@ img {
   }
 }
 
-@media (min-width: 1200px) {
-  .adventuries__item::last-child {
-    margin-right: 0;
-  }
-}
-
-.adventuries__item--third {
-  position: relative;
-}
-
-.adventuries__image {
-  align-self: center;
-}
-
-.adventuries__image--first,
-.adventuries__image--second {
+.adventuries__item--first:before {
   display: none;
 }
 @media (min-width: 1200px) {
-  .adventuries__image--first,
-.adventuries__image--second {
+  .adventuries__item--first:before {
+    content: "";
     display: block;
+    width: 186px;
+    height: 382px;
+    background-image: url("../img/iphone1.png");
+    background-repeat: no-repeat;
   }
 }
 
-@media (min-width: 660px) {
-  .adventuries__image--third {
-    position: absolute;
-    top: 0;
-    left: -310px;
-  }
+.adventuries__item--second:before {
+  display: none;
 }
 @media (min-width: 1200px) {
-  .adventuries__image--third {
-    position: static;
+  .adventuries__item--second:before {
+    content: "";
+    display: block;
+    width: 186px;
+    height: 382px;
+    background-image: url("../img/iphone2.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.adventuries__item--third:before {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .adventuries__item--third:before {
+    content: "";
+    display: block;
+    width: 186px;
+    height: 382px;
+    background-image: url("../img/iphone3-large.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.adventuries__item--third:after {
+  content: "";
+  display: block;
+  width: 237px;
+  height: 421px;
+  background-image: url("../img/iphone3-small.png");
+  background-repeat: no-repeat;
+}
+@media (min-width: 660px) {
+  .adventuries__item--third:after {
+    display: none;
   }
 }
 
@@ -217,7 +255,7 @@ img {
 
 .button {
   display: inline-block;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Opensans", "Arial", sans-serif;
 }
 
 .card__img {
@@ -541,7 +579,7 @@ img {
     align-items: center;
     gap: 26px;
     color: #D22856;
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Opensans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 30px;
   }
@@ -584,7 +622,7 @@ img {
   grid-template-columns: 35px 1fr;
   gap: 22px;
   color: #283645;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Opensans", "Arial", sans-serif;
   font-size: 18x;
   font-weight: 400;
   line-height: 30px;
@@ -672,7 +710,7 @@ img {
   border: none;
   background-color: #2AAB6D;
   color: #ffffff;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Opensans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
@@ -715,17 +753,15 @@ img {
   color: #ffffff;
   background-repeat: no-repeat;
   background-image: url("../img/bg-mobile.jpg");
-  min-height: 462px;
+  background-size: cover;
 }
-@media (min-width: 660px) {
+@media (min-width: 400px) {
   .page__header {
-    min-height: 729px;
     background-image: url("../img/bg-tablet.jpg");
   }
 }
 @media (min-width: 1200px) {
   .page__header {
-    min-height: 853px;
     background-image: url("../img/bg-desktop.jpg");
   }
 }
@@ -780,72 +816,35 @@ img {
   }
 }
 
-@media (max-width: 659px) {
+@media (max-width: 1199px) {
   .page-header__nav--closed .page-header__menu {
     display: none;
   }
 }
 
-.site-menu {
+.header__title {
   margin: 0;
-  padding: 0;
-  list-style-type: none;
-  font-size: 18px;
-  line-height: 32px;
-}
-@media (min-width: 1200px) {
-  .site-menu {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    line-height: 18px;
-  }
-}
-
-@media (max-width: 659px) {
-  .site-menu__item:first-child {
-    border-top: 1px solid #000000;
-  }
-}
-
-@media (max-width: 659px) {
-  .site-menu__item {
-    border-bottom: 1px solid #000000;
-  }
-}
-
-@media (min-width: 660px) {
-  .site-menu__item--active {
-    position: relative;
-  }
-}
-
-.site-menu__link {
-  display: block;
-  padding: 25px;
-  text-decoration: none;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #283645;
-}
-@media (min-width: 1200px) {
-  .site-menu__link {
-    text-transform: capitalize;
-    background-color: transparent;
-  }
-}
-
-.page-header__promo {
-  margin: 0;
+  margin-bottom: 34px;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  text-align: center;
   color: #ffffff;
+}
+@media (min-width: 660px) {
+  .header__title {
+    margin-bottom: 39px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__title {
+    margin-bottom: 51px;
+  }
 }
 
 .page__body {
   position: relative;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Opensans", "Arial", sans-serif;
   background-color: #ffffff;
   color: #283645;
 }
@@ -916,6 +915,55 @@ img {
 @media (min-width: 660px) {
   .share__paragraph {
     font-size: 18px;
+  }
+}
+
+.site-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@media (min-width: 1200px) {
+  .site-menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 659px) {
+  .site-menu__item:first-child {
+    border-top: 1px solid #000000;
+  }
+}
+
+@media (max-width: 659px) {
+  .site-menu__item {
+    border-bottom: 1px solid #000000;
+  }
+}
+
+@media (min-width: 660px) {
+  .site-menu__item--active {
+    position: relative;
+  }
+}
+
+.site-menu__link {
+  display: block;
+  padding: 25px;
+  font-size: 18px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #283645;
+}
+@media (min-width: 1200px) {
+  .site-menu__link {
+    text-transform: capitalize;
+    line-height: 18px;
+    background-color: transparent;
   }
 }
 

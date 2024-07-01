@@ -8,6 +8,17 @@
 }
 
 .adventuries__list {
+  display: block;
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: $breakpoint-large) {
+    display: block;
+  }
+}
+
+.adventuries__list {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -17,6 +28,24 @@
   list-style-type: none;
   background-color: $color-light-gray;
 }
+
+.adventuries__list::before {
+  content: "";
+  display: none;
+  @media (min-width: $breakpoint-medium) {
+  content: "";
+  display: block;
+  width: 268px;
+  height: 547px;
+  background-image: url("../img/iphone3-medium.png");
+  background-repeat: no-repeat;
+  }
+  @media (min-width: $breakpoint-large) {
+    display: none;
+  }
+
+}
+
 .adventuries__item {
   display: flex;
   flex-direction: column;
@@ -26,38 +55,56 @@
   }
 }
 
-.adventuries__item::last-child {
-  @media (min-width: $breakpoint-large) {
-    margin-right: 0;
-  }
-}
-
-.adventuries__item--third {
-  position: relative;
-}
-.adventuries__image {
-  align-self: center;
-}
-
-.adventuries__image--first,
-.adventuries__image--second {
+.adventuries__item--first:before {
   display: none;
   @media (min-width: $breakpoint-large) {
+    content: "";
     display: block;
+    width: 186px;
+    height: 382px;
+    background-image: url("../img/iphone1.png");
+    background-repeat: no-repeat;
   }
 }
 
-.adventuries__image--third {
-  @media (min-width: $breakpoint-medium) {
-    position: absolute;
-    top: 0;
-    left: -310px;
-  }
-
+.adventuries__item--second:before {
+  display: none;
   @media (min-width: $breakpoint-large) {
-    position: static;
+    content: "";
+    display: block;
+    width: 186px;
+    height: 382px;
+    background-image: url("../img/iphone2.png");
+    background-repeat: no-repeat;
   }
 }
+
+.adventuries__item--third:before {
+  display: none;
+  @media (min-width: $breakpoint-large) {
+    content: "";
+    display: block;
+    width: 186px;
+    height: 382px;
+    background-image: url("../img/iphone3-large.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.adventuries__item--third:after {
+  content: "";
+    display: block;
+    width: 237px;
+    height: 421px;
+    background-image: url("../img/iphone3-small.png");
+    background-repeat: no-repeat;
+  @media (min-width: $breakpoint-medium) {
+   display: none;
+  }
+}
+
+
+
 
 .adventuries__title {
   margin: 0;
@@ -82,13 +129,10 @@
   text-align: center;
   @media (min-width: $breakpoint-medium) {
     text-align: left;
-  }
+  };
   @media (min-width: $breakpoint-large) {
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-  }
+  };
 }
-
-
-
