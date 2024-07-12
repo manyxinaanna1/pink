@@ -40,6 +40,21 @@ img {
 }
 
 .adventuries__list {
+  display: block;
+}
+@media (min-width: 660px) {
+  .adventuries__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .adventuries__list {
+    display: block;
+  }
+}
+
+.adventuries__list {
   position: relative;
   display: flex;
   flex-wrap: wrap;
