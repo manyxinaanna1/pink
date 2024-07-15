@@ -16,17 +16,17 @@
   list-style: none;
 }
 
+.field {
+  color: $color-purple;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 30px;
 @media (min-width: $breakpoint-medium) {
-  .field {
     position: relative;
     display: grid;
     grid-template-columns: max-content 1fr;
     align-items: center;
     gap: 26px;
-    color: $color-purple;
-    font-family: $font;
-    font-size: 14px;
-    line-height: 30px;
   }
 }
 

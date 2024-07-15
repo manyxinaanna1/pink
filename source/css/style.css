@@ -586,6 +586,12 @@ img {
   list-style: none;
 }
 
+.field {
+  color: #D22856;
+  font-family: "Opensans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+}
 @media (min-width: 660px) {
   .field {
     position: relative;
@@ -593,12 +599,9 @@ img {
     grid-template-columns: max-content 1fr;
     align-items: center;
     gap: 26px;
-    color: #D22856;
-    font-family: "Opensans", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 30px;
   }
 }
+
 .field__lead {
   text-transform: uppercase;
 }
@@ -926,6 +929,7 @@ img {
 .share__paragraph {
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
 }
 @media (min-width: 660px) {
   .share__paragraph {
