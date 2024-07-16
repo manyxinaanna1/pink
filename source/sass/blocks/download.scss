@@ -1,6 +1,9 @@
 .download {
   background-color: $color-graphite-gray;
   color: $color-white;
+  @media (min-width: $breakpoint-medium) {
+    background-color: transparent;
+  }
 }
 
 
@@ -16,6 +19,7 @@
   box-sizing: border-box;
   margin-top: 28px;
 }
+
 .download__list {
   display: flex;
   flex-wrap: wrap;
@@ -53,6 +57,7 @@
   background: url('../img/microsoft-logo.svg');
   background-repeat: no-repeat;
 }
+
 .download__paragraph {
   padding-bottom: 38px;
   font-size: 14px;

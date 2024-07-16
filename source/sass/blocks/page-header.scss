@@ -38,7 +38,7 @@
     background-repeat: no-repeat;
     background-image: url(../img/icons/burger.svg);
     border: none;
-    @media (max-width: $breakpoint-small-down) {
+    @media (max-width: $breakpoint-medium-down) {
       .page-header__nav--closed & {
         display: block;
       }

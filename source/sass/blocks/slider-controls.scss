@@ -1,4 +1,4 @@
-.slider-controls {
+.slider__controls {
   position: absolute;
   top: 155px;
   left: 0;
@@ -8,14 +8,19 @@
   transform: translateY(-50%);
 }
 
-.slider-button {
-  width: 22px;
-  height: 41px;
-  background-image: url(../img/icons/arrow.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
-  background-color: transparent;
+.slider__button {
+  display: none;
+  @media (min-width: $breakpoint-large) {
+    display: block;
+    width: 22px;
+    height: 41px;
+    background-image: url(../img/icons/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+  }
+
 }
 
 .slider-next {

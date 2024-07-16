@@ -1,0 +1,8 @@
+.color__gradient {
+  min-height: 90px;
+  background: linear-gradient(to bottom right, $color-white 50%, $color-light-gray 50%);
+}
+
+.color__background {
+  background: $color-light-gray;
+}

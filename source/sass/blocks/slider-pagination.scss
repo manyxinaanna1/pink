@@ -1,0 +1,39 @@
+.slider__pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 19px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.slider__pagination--blockquote {
+  @media (min-width: $breakpoint-large) {
+    display: none;
+  }
+}
+
+.slider__pagination--tariff {
+  @media (min-width: $breakpoint-medium) {
+    display: none;
+  }
+}
+
+.slider__pagination-button {
+  width: 6px;
+  height: 6px;
+  margin: 0;
+  padding: 0;
+  background-color: $color-graphite-gray;
+  opacity: 0.3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__pagination-button-current {
+  color: $color-white;
+  opacity: 1;
+  border: 3px solid $color-graphite-gray;
+}

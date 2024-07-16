@@ -64,11 +64,11 @@
           <p class="promo__paragraph">Нам есть, что вам <br> предложить!</p>
         </div>
       </section>
-      <section class="adventuries container">
-       <div class="adventures__color">
+      <section class="adventuries">
+       <div class="color__gradient">
        </div>
-      <div class="adventures__list-wraper">
-        <ul class="adventuries__list">
+      <div class="color__background">
+        <ul class="adventuries__list container">
           <li class="adventuries__item adventuries__item--first">
             <h2 class="adventuries__title">Поднимает настроение</h2>
             <p class="adventuries__paragraph">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -84,8 +84,8 @@
         </ul>
       </div>
       </section>
-      <section class="effect container">
-        <div class="effect__wrapper">
+      <section class="effect">
+        <div class="effect__wrapper container">
           <div class="effect__image">
           </div>
           <div class="effect__text">
@@ -101,20 +101,40 @@
           <cite class="blockquote__author">Николай Петров</cite>
           <blockquote class="blockquote__blockquote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
           <div class="blockquote__image"></div>
-          <div class="slider-controls">
-            <button class="slider-button slider-prev" type="button">
+          <div class="slider__controls">
+            <button class="slider__button slider-prev" type="button">
               <span class="visually-hidden">Предыдущее изображение</span>
             </button>
-            <button class="slider-button slider-next" type="button">
+            <button class="slider__button slider-next" type="button">
               <span class="visually-hidden">Следующее изображение</span>
             </button>
           </div>
+
         </div>
+        <ol class="slider__pagination slider__pagination--blockquote">
+          <li class="slider__pagination-item">
+            <button class="slider__pagination-button slider__pagination-button-current" type="button">
+              <span class="visually-hidden">1 слайд</span>
+            </button>
+          </li>
+          <li class="slider__pagination-item">
+            <button class="slider__pagination-button" type="button">
+              <span class="visually-hidden">2 слайд</span>
+            </button>
+          </li>
+          <li class="slider__pagination-item">
+            <button class="slider__pagination-button" type="button">
+              <span class="visually-hidden">3 слайд</span>
+            </button>
+          </li>
+        </ol>
       </section>
       <section class="tariff">
-        <div class="container">
+        <div class="color__gradient">
+        </div>
+        <div class="color__background">
           <h2 class="visually-hidden">Сравнение тарифов</h2>
-          <table class="tariff-compare__table">
+          <table class="tariff-compare__table container">
             <tr>
               <th class="tariff-compare__header tariff-compare__header--none"> </th>
               <th class="tariff-compare__header">База
@@ -146,6 +166,24 @@
               <td class="tariff-compare tariff-compare--yes"><span class="visually-hidden"> Да</span></td>
             </tr>
           </table>
+
+          <ol class="slider__pagination slider__pagination--tariff">
+            <li class="slider__pagination-item">
+              <button class="slider__pagination-button" type="button">
+                <span class="visually-hidden">1 слайд</span>
+              </button>
+            </li>
+            <li class="slider__pagination-item">
+              <button class="slider__pagination-button slider__pagination-button-current" type="button">
+                <span class="visually-hidden">2 слайд</span>
+              </button>
+            </li>
+            <li class="slider__pagination-item">
+              <button class="slider__pagination-button" type="button">
+                <span class="visually-hidden">3 слайд</span>
+              </button>
+            </li>
+          </ol>
         </div>
       </section>
       <section class="contacts container">

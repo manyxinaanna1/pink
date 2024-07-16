@@ -2,6 +2,7 @@
 .blockquote-wrapper {
   position: relative;
   display: flex;
+  flex-direction: column;
   @media (min-width: $breakpoint-medium) {
     flex-direction: column-reverse;
   }
@@ -20,22 +21,28 @@
   }
 }
 .blockquote__author {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
+  margin: 0;
+  margin-bottom: 31px;
+  padding-top: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
     @media (min-width: $breakpoint-medium) {
+      margin-bottom: 17px;
       font-size: 20px;
     }
 }
 .blockquote__blockquote {
   margin: 0 auto;
+  padding-bottom: 44px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
     @media (min-width: $breakpoint-large) {
       padding-top: 58px;
+      padding-bottom: 51px;
     }
 
     @media (min-width: $breakpoint-medium) {

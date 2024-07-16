@@ -1,13 +1,15 @@
-@media (min-width: $breakpoint-medium) {
-  .page-footer__wrapper {
-      display: flex;
-      align-items: center;
-      padding-top: 70px;
-      padding-bottom: 82px;
+.page-footer__wrapper {
+  margin-top: 40px;
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 82px;
   }
 }
 
 .page-footer__logo {
+
   margin-bottom: 41px;
   @media (min-width: $breakpoint-medium) {
     margin-bottom: 0;
