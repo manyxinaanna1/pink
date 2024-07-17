@@ -132,10 +132,12 @@ img {
 .adventuries__item--third:after {
   content: "";
   display: block;
+  margin: 0 auto;
   width: 237px;
   height: 284px;
   background-image: url("../img/iphone3-small.png");
   background-repeat: no-repeat;
+  background-position: center top;
 }
 @media (min-width: 660px) {
   .adventuries__item--third:after {
@@ -716,7 +718,8 @@ img {
 }
 
 .field__input--textarea {
-  margin: 25px;
+  width: 100%;
+  padding: 25px;
 }
 
 .field__wrapper {

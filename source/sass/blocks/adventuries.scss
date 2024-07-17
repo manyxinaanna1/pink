@@ -85,10 +85,12 @@
 .adventuries__item--third:after {
   content: "";
     display: block;
+    margin: 0 auto;
     width: 237px;
     height: 284px;
     background-image: url("../img/iphone3-small.png");
     background-repeat: no-repeat;
+    background-position: center top;
   @media (min-width: $breakpoint-medium) {
    display: none;
   }
