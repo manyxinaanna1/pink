@@ -9,7 +9,7 @@
   </head>
   <body class="page__body">
     <header class="page__header page__header--image">
-      <div class="header__wrapper container">
+
       <nav class="page-header__nav container page-header__nav--main  page-header__nav--closed">
         <div class="page-header__bar">
           <a class="page-header__logo logo">
@@ -38,25 +38,26 @@
           </ul>
         </div>
       </nav>
+      <div class="header__wrapper container">
       <h1 class="header__title">Взгляните на жизнь иначе!</h1>
       <picture class="header__phone">
-        <source media="(min-width: 1200px)" srcset="img/phone-desktop.png" width="1050" height="645">
-        <source media="(min-width: 660px)" srcset="img/phone-tablet.png" width="660" height="545">
-        <img class="header__phone" src="img/phone-mobile.png" width="320" height="286" alt="Изображение телефона">
+        <source media="(min-width: 1200px)" srcset="./img/phone-desktop.png" width="1050" height="645">
+        <source media="(min-width: 660px)" srcset="./img/phone-tablet.png" width="660" height="545">
+        <img class="header__phone" src="./img/phone-mobile.png" width="320" height="286" alt="Изображение телефона">
       </picture>
-      <div class="download container">
-        <h2 class="visually-hidden">Скачать приложение</h2>
-        <button class="download__button button">Скачать приложение</button>
-        <ul class="download__list">
-          <li class="download__item download__item--apple">
+
+
+        <button class="header__button button">Скачать приложение</button>
+        <ul class="header__list">
+          <li class="header__item header__item--apple">
           </li>
-          <li class="download__item download__item--android">
+          <li class="header__item header__item--android">
           </li>
-          <li class="download__item download__item--microsoft">
+          <li class="header__item header__item--microsoft">
           </li>
         </ul>
-        <p class="download__paragraph">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
+        <p class="header__paragraph">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+
     </div>
     </header>
     <main>

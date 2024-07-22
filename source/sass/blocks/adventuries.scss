@@ -1,5 +1,5 @@
 .adventuries__list {
-  display: block;
+
   @media (min-width: $breakpoint-medium) {
     display: flex;
     justify-content: space-between;
@@ -11,25 +11,40 @@
 
 .adventuries__list {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
   min-height: 245px;
   list-style-type: none;
   background-color: $color-light-gray;
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    grid-template-rows: auto auto auto;
+  }
+  @media (min-width: $breakpoint-large) {
+    display: flex;
+    justify-content: space-between;
+    gap: 68px;
+  }
 }
 
 .adventuries__list::before {
-  content: "";
   display: none;
   @media (min-width: $breakpoint-medium) {
   content: "";
   display: block;
   width: 268px;
   height: 547px;
+
   background-image: url("../img/iphone3-medium.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $breakpoint-medium) {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
   }
   @media (min-width: $breakpoint-large) {
     display: none;
@@ -38,11 +53,14 @@
 }
 
 .adventuries__item {
-  display: flex;
-  flex-direction: column;
+
+  @media (min-width: $breakpoint-medium) {
+    grid-column: 2/3;
+
+  }
   @media (min-width: $breakpoint-large) {
-    width: 225px;
-    margin-right: 75px;
+    width: 252px;
+
   }
 }
 
@@ -53,6 +71,7 @@
     display: block;
     width: 186px;
     height: 382px;
+    margin-bottom: 59px;
     background-image: url("../img/iphone1.png");
     background-repeat: no-repeat;
   }
@@ -63,6 +82,7 @@
   @media (min-width: $breakpoint-large) {
     content: "";
     display: block;
+    margin-bottom: 59px;
     width: 186px;
     height: 382px;
     background-image: url("../img/iphone2.png");
@@ -75,6 +95,7 @@
   @media (min-width: $breakpoint-large) {
     content: "";
     display: block;
+    margin-bottom: 59px;
     width: 186px;
     height: 382px;
     background-image: url("../img/iphone3-large.png");
