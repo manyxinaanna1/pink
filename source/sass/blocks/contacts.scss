@@ -18,6 +18,7 @@
   @media (min-width: $breakpoint-medium) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 

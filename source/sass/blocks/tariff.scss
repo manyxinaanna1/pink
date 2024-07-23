@@ -1,22 +1,37 @@
 .tariff-compare__table {
-  margin: 0 auto 43px;
-  padding: 0 20px;
-
   background-color: $color-white;
   border-collapse: collapse;
-  transform: translateX(-255px);
-  overflow: hidden;
 }
 
-.tariff-compare__header,
-.tariff-compare {
+.tariff-compare__table--tablet .tariff-compare__header:not(:first-child),
+.tariff-compare__table--tablet .tariff-compare {
     border: 2px solid #E5E5E5;
 }
 
+.tariff-compare__table--mobile {
+  @media (min-width: $breakpoint-medium) {
+    display: none;
+  }
+}
+
+.tariff-compare__table--tablet {
+  display: none;
+  @media (min-width: $breakpoint-medium) {
+    display: block;
+  }
+}
+
 .tariff-compare__header,
 .tariff-compare {
-    width: 234px;
+  @media (min-width: $breakpoint-medium) {
+    min-width: 153px;
+    min-height: 45px;
+  }
+  @media (min-width: $breakpoint-large) {
+    min-width: 234px;
     min-height: 59px;
+  }
+
 }
 
 .tariff-compare__header {
@@ -36,13 +51,19 @@
 }
 
 .tariff-compare {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  @media (min-width: $breakpoint-medium) {
     font-size: 18px;
-    line-height: 30px;
+    text-transform: none;
+    }
+
 }
 
 .tariff-compare__header--none {
-    background-color: $color-white;
-    border: none;
+    background-color: $color-light-gray;
+
 }
 
 .tariff-compare__header--hit {
@@ -51,7 +72,7 @@
   @media (min-width: $breakpoint-medium) {
     background-image: url("../img/hit-tablet.png");
     }
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-large) {
     background-image: url("../img/hit-desktop.png");
   }
 }
@@ -61,17 +82,21 @@
 }
 
 .tariff-compare--yes {
-    background-image: url('../img/icons/yes.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 19px;
-    padding-bottom: 19px;
+  width: 31px;
+  height: 21px;
+  background-image: url('../img/icons/yes.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
 
 .tariff-compare--no {
-    background-image: url('../img/icons/no.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 19px;
-    padding-bottom: 19px;
+  width: 27px;
+  height: 27px;
+  background-image: url('../img/icons/no.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 19px;
+  padding-bottom: 19px;
 }

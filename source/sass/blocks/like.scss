@@ -1,9 +1,11 @@
 
-
-
 .like {
   display: flex;
   gap: 18px;
+  @media (min-width: $breakpoint-medium) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    }
 }
 
 .like__description {
