@@ -1,3 +1,16 @@
+.form {
+  @media (min-width: $breakpoint-medium) {
+  display: flex;
+  flex-direction: column;
+  }
+  @media (min-width: $breakpoint-large) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 74px;
+
+    }
+}
+
 .form__group {
   margin: 0;
 }
@@ -7,6 +20,46 @@
   border: none;
   @media (min-width: $breakpoint-medium) {
     border: 2px solid #E5E5E5;
+  }
+}
+
+.form__group--traveler {
+  border: none;
+}
+
+.form__group--contacts {
+  @media (min-width: $breakpoint-medium) {
+    order: 1;
+  }
+  @media (min-width: $breakpoint-medium) {
+    grid-column: 1/-1;
+  }
+}
+
+.form__group--achievements {
+  @media (min-width: $breakpoint-medium) {
+  order: 2;
+  }
+  @media (min-width: $breakpoint-medium) {
+    grid-column: 1/-1;
+  }
+}
+
+.form__group--description {
+  @media (min-width: $breakpoint-medium) {
+  order: 3;
+  }
+  @media (min-width: $breakpoint-medium) {
+    grid-column: 1/-1;
+  }
+}
+
+.form__footer--send {
+  @media (min-width: $breakpoint-medium) {
+  order: 4;
+  }
+  @media (min-width: $breakpoint-medium) {
+    grid-column: 1/-1;
   }
 }
 

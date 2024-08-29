@@ -12,7 +12,7 @@
   }
 }
  .contacts__list {
-  margin: o;
+  margin: 0;
   padding: 0;
   list-style-type: none;
   @media (min-width: $breakpoint-medium) {
@@ -34,21 +34,30 @@
     }
 }
 
+.contacts__item--order {
+  @media (min-width: $breakpoint-large) {
+    order: 1;
+  }
+}
+
 
 .contasts__paragraph {
   font-size: 18px;
   line-height: 25px;
   font-weight: 700;
+  text-align: center;
 }
 
 .contasts__link,
 .contasts__address {
+  display: block;
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
   color: #D22856;
   text-decoration: none;
   font-style: normal;
+  text-align: center;
 }
 
 .contacts__map {

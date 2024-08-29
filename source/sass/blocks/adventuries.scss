@@ -52,54 +52,43 @@
 
 }
 
-.adventuries__item {
-
-  @media (min-width: $breakpoint-medium) {
-    grid-column: 2/3;
-
-  }
-  @media (min-width: $breakpoint-large) {
-    width: 252px;
-
-  }
-}
-
-.adventuries__item--first:before {
+.adventuries__item:before {
   display: none;
   @media (min-width: $breakpoint-large) {
     content: "";
     display: block;
     width: 186px;
     height: 382px;
-    margin-bottom: 59px;
-    background-image: url("../img/iphone1.png");
+    margin: 0 auto 59px auto;
     background-repeat: no-repeat;
+  }
+}
+
+
+.adventuries__item--first:before {
+
+  @media (min-width: $breakpoint-large) {
+
+    background-image: url("../img/iphone1.png");
+
   }
 }
 
 .adventuries__item--second:before {
-  display: none;
+
   @media (min-width: $breakpoint-large) {
-    content: "";
-    display: block;
-    margin-bottom: 59px;
-    width: 186px;
-    height: 382px;
+
     background-image: url("../img/iphone2.png");
-    background-repeat: no-repeat;
+
   }
 }
 
 .adventuries__item--third:before {
-  display: none;
+
   @media (min-width: $breakpoint-large) {
-    content: "";
-    display: block;
-    margin-bottom: 59px;
-    width: 186px;
-    height: 382px;
+
     background-image: url("../img/iphone3-large.png");
-    background-repeat: no-repeat;
+
   }
 }
 
@@ -117,7 +106,17 @@
   }
 }
 
+.adventuries__item {
 
+  @media (min-width: $breakpoint-medium) {
+    grid-column: 2/3;
+
+  }
+  @media (min-width: $breakpoint-large) {
+    width: 252px;
+
+  }
+}
 
 
 .adventuries__title {
