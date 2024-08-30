@@ -3,6 +3,11 @@
   line-height: 30px;
   text-align: center;
   @media (min-width: $breakpoint-medium) {
+    width: 490px;
+    font-size: 18px;
+  }
+  @media (min-width: $breakpoint-large) {
+    width: 756px;
     font-size: 18px;
   }
 }

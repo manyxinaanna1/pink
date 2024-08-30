@@ -561,6 +561,7 @@ img {
 
 .form__group {
   margin: 0;
+  margin-bottom: 65px;
 }
 
 .field-group {
@@ -576,24 +577,42 @@ img {
 .form__group--traveler {
   border: none;
 }
+@media (min-width: 1200px) {
+  .form__group--traveler {
+    padding-top: 63px;
+  }
+}
 
 @media (min-width: 660px) {
   .form__group--contacts {
     order: 1;
+    padding: 44px 60px;
   }
 }
-@media (min-width: 660px) {
+@media (min-width: 1200px) {
   .form__group--contacts {
     grid-column: 1/-1;
   }
 }
 
 @media (min-width: 660px) {
-  .form__group--achievements {
-    order: 2;
+  .form__group--application {
+    padding: 54px 60px;
   }
 }
+@media (min-width: 1200px) {
+  .form__group--application {
+    padding: 37px 32px;
+  }
+}
+
 @media (min-width: 660px) {
+  .form__group--achievements {
+    order: 2;
+    padding: 54px 60px;
+  }
+}
+@media (min-width: 1200px) {
   .form__group--achievements {
     grid-column: 1/-1;
   }
@@ -602,9 +621,10 @@ img {
 @media (min-width: 660px) {
   .form__group--description {
     order: 3;
+    padding: 47px 60px;
   }
 }
-@media (min-width: 660px) {
+@media (min-width: 1200px) {
   .form__group--description {
     grid-column: 1/-1;
   }
@@ -615,7 +635,7 @@ img {
     order: 4;
   }
 }
-@media (min-width: 660px) {
+@media (min-width: 1200px) {
   .form__footer--send {
     grid-column: 1/-1;
   }
@@ -624,6 +644,7 @@ img {
 .field-group__list {
   margin: 0;
   padding: 0;
+  padding-left: 41px;
   list-style: none;
 }
 
@@ -647,8 +668,8 @@ img {
   text-transform: uppercase;
 }
 
-.field-group__item {
-  margin-bottom: 47px;
+.field-group__item:not(:last-child) {
+  margin-bottom: 42px;
 }
 
 .field-group__heading {
@@ -732,7 +753,7 @@ img {
 }
 .field__input {
   min-width: 100px;
-  padding: 23px 20px;
+  padding: 15px 16px;
   color: #283645;
   border: 2px solid #E5E5E5;
   font-family: inherit;
@@ -765,7 +786,16 @@ img {
   }
 }
 
+@media (min-width: 660px) {
+  .form__footer {
+    display: grid;
+    grid-template-columns: 296px 1fr;
+    gap: 135px;
+  }
+}
+
 .form__button {
+  margin-bottom: 56px;
   padding: 18px 58px;
   border: none;
   background-color: #2AAB6D;
@@ -775,8 +805,14 @@ img {
   line-height: 30px;
   text-transform: uppercase;
 }
+@media (min-width: 660px) {
+  .form__button {
+    margin-bottom: 0;
+  }
+}
 
 .form__additional {
+  margin: 0;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1084,6 +1120,13 @@ img {
 }
 @media (min-width: 660px) {
   .share__paragraph {
+    width: 490px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .share__paragraph {
+    width: 756px;
     font-size: 18px;
   }
 }

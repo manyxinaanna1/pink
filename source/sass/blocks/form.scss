@@ -13,6 +13,7 @@
 
 .form__group {
   margin: 0;
+  margin-bottom: 65px;
 }
 
 .field-group {
@@ -25,22 +26,37 @@
 
 .form__group--traveler {
   border: none;
+  @media (min-width: $breakpoint-large) {
+    padding-top: 63px;
+  }
 }
 
 .form__group--contacts {
   @media (min-width: $breakpoint-medium) {
     order: 1;
+    padding: 44px 60px;
   }
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-large) {
     grid-column: 1/-1;
+
+  }
+}
+
+.form__group--application {
+  @media (min-width: $breakpoint-medium) {
+    padding: 54px 60px;
+  }
+  @media (min-width: $breakpoint-large) {
+    padding: 37px 32px;
   }
 }
 
 .form__group--achievements {
   @media (min-width: $breakpoint-medium) {
   order: 2;
+  padding: 54px 60px;
   }
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-large) {
     grid-column: 1/-1;
   }
 }
@@ -48,8 +64,9 @@
 .form__group--description {
   @media (min-width: $breakpoint-medium) {
   order: 3;
+  padding: 47px 60px;
   }
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-large) {
     grid-column: 1/-1;
   }
 }
@@ -58,7 +75,7 @@
   @media (min-width: $breakpoint-medium) {
   order: 4;
   }
-  @media (min-width: $breakpoint-medium) {
+  @media (min-width: $breakpoint-large) {
     grid-column: 1/-1;
   }
 }
@@ -66,6 +83,7 @@
 .field-group__list {
   margin: 0;
   padding: 0;
+  padding-left: 41px;
   list-style: none;
 }
 
@@ -87,8 +105,8 @@
   text-transform: uppercase;
 }
 
-.field-group__item {
-  margin-bottom: 47px;
+.field-group__item:not(:last-child) {
+  margin-bottom: 42px;
 }
 
 .field-group__heading {
@@ -170,7 +188,7 @@
 
 .field__input {
   min-width: 100px;
-  padding: 23px 20px;
+  padding: 15px 16px;
   color: $color-graphite-gray;
   border: 2px solid #E5E5E5;
   font-family: inherit;
@@ -200,8 +218,15 @@
     flex-direction: column-reverse;
   }
 }
-
+.form__footer  {
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    grid-template-columns: 296px 1fr;
+    gap: 135px;
+  }
+}
 .form__button {
+  margin-bottom: 56px;
   padding: 18px 58px;
   border: none;
   background-color: #2AAB6D;
@@ -210,9 +235,13 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 0;
+  }
 }
 
 .form__additional {
+  margin: 0;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
