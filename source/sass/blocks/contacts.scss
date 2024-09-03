@@ -14,6 +14,7 @@
  .contacts__list {
   margin: 0;
   padding: 0;
+  padding-bottom: 38px;
   list-style-type: none;
   @media (min-width: $breakpoint-medium) {
     display: flex;
@@ -21,17 +22,10 @@
     justify-content: space-around;
   }
 }
-
+.contacts__item:not(:last-child) {
 @media (min-width: $breakpoint-medium) {
-  .contacts__item {
-      margin-right: 87px;
+    margin-right: 87px;
   }
-}
-
-@media (min-width: $breakpoint-medium) {
-  .contacts__item:last-child   {
-      margin-right: 0;
-    }
 }
 
 .contacts__item--order {
@@ -64,5 +58,6 @@
   display: block;
   width: 100%;
   height: 362px;
+  margin-top: -33px;
   border: none;
 }
