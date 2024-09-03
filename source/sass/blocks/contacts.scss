@@ -11,6 +11,7 @@
     line-height: 68px;
   }
 }
+
  .contacts__list {
   margin: 0;
   padding: 0;
@@ -22,6 +23,7 @@
     justify-content: space-around;
   }
 }
+
 .contacts__item:not(:last-child) {
 @media (min-width: $breakpoint-medium) {
     margin-right: 87px;
@@ -33,7 +35,6 @@
     order: 1;
   }
 }
-
 
 .contasts__paragraph {
   font-size: 18px;

@@ -1,5 +1,4 @@
 .adventuries__list {
-
   @media (min-width: $breakpoint-medium) {
     display: flex;
     justify-content: space-between;
@@ -11,11 +10,10 @@
 
 .adventuries__list {
   position: relative;
-
+  min-height: 245px;
   margin: 0;
   padding: 0;
-  min-height: 245px;
-  list-style-type: none;
+    list-style-type: none;
   background-color: $color-light-gray;
   @media (min-width: $breakpoint-medium) {
     display: grid;
@@ -37,19 +35,15 @@
   display: block;
   width: 268px;
   height: 547px;
-
   background-image: url("../img/iphone3-medium.png");
   background-repeat: no-repeat;
-
   @media (min-width: $breakpoint-medium) {
     grid-column: 1/2;
     grid-row: 1/4;
   }
-  }
   @media (min-width: $breakpoint-large) {
     display: none;
   }
-
 }
 
 .adventuries__item:before {
@@ -66,58 +60,45 @@
 
 
 .adventuries__item--first:before {
-
   @media (min-width: $breakpoint-large) {
-
     background-image: url("../img/iphone1.png");
-
   }
 }
 
 .adventuries__item--second:before {
-
   @media (min-width: $breakpoint-large) {
-
     background-image: url("../img/iphone2.png");
-
   }
 }
 
 .adventuries__item--third:before {
-
   @media (min-width: $breakpoint-large) {
-
     background-image: url("../img/iphone3-large.png");
-
   }
 }
 
 .adventuries__item--third:after {
   content: "";
-    display: block;
-    margin: 0 auto;
-    width: 237px;
-    height: 284px;
-    background-image: url("../img/iphone3-small.png");
-    background-repeat: no-repeat;
-    background-position: center top;
+  display: block;
+  margin: 0 auto;
+  width: 237px;
+  height: 284px;
+  background-image: url("../img/iphone3-small.png");
+  background-repeat: no-repeat;
+  background-position: center top;
   @media (min-width: $breakpoint-medium) {
    display: none;
   }
 }
 
 .adventuries__item {
-
   @media (min-width: $breakpoint-medium) {
     grid-column: 2/3;
-
   }
   @media (min-width: $breakpoint-large) {
     width: 252px;
-
   }
 }
-
 
 .adventuries__title {
   margin: 0;
@@ -142,10 +123,11 @@
   text-align: center;
   @media (min-width: $breakpoint-medium) {
     text-align: left;
-  };
+  }
   @media (min-width: $breakpoint-large) {
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-  };
+  }
+}
 }

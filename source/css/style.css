@@ -44,9 +44,9 @@ img {
 
 .adventuries__list {
   position: relative;
+  min-height: 245px;
   margin: 0;
   padding: 0;
-  min-height: 245px;
   list-style-type: none;
   background-color: #F2F2F2;
 }
@@ -85,17 +85,16 @@ img {
     grid-row: 1/4;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 660px) and (min-width: 1200px) {
   .adventuries__list::before {
     display: none;
   }
 }
-
-.adventuries__item:before {
+.adventuries__list::before .adventuries__item:before {
   display: none;
 }
 @media (min-width: 1200px) {
-  .adventuries__item:before {
+  .adventuries__list::before .adventuries__item:before {
     content: "";
     display: block;
     width: 186px;
@@ -104,26 +103,22 @@ img {
     background-repeat: no-repeat;
   }
 }
-
 @media (min-width: 1200px) {
-  .adventuries__item--first:before {
+  .adventuries__list::before .adventuries__item--first:before {
     background-image: url("../img/iphone1.png");
   }
 }
-
 @media (min-width: 1200px) {
-  .adventuries__item--second:before {
+  .adventuries__list::before .adventuries__item--second:before {
     background-image: url("../img/iphone2.png");
   }
 }
-
 @media (min-width: 1200px) {
-  .adventuries__item--third:before {
+  .adventuries__list::before .adventuries__item--third:before {
     background-image: url("../img/iphone3-large.png");
   }
 }
-
-.adventuries__item--third:after {
+.adventuries__list::before .adventuries__item--third:after {
   content: "";
   display: block;
   margin: 0 auto;
@@ -134,23 +129,21 @@ img {
   background-position: center top;
 }
 @media (min-width: 660px) {
-  .adventuries__item--third:after {
+  .adventuries__list::before .adventuries__item--third:after {
     display: none;
   }
 }
-
 @media (min-width: 660px) {
-  .adventuries__item {
+  .adventuries__list::before .adventuries__item {
     grid-column: 2/3;
   }
 }
 @media (min-width: 1200px) {
-  .adventuries__item {
+  .adventuries__list::before .adventuries__item {
     width: 252px;
   }
 }
-
-.adventuries__title {
+.adventuries__list::before .adventuries__title {
   margin: 0;
   margin-bottom: 24px;
   font-size: 18px;
@@ -158,31 +151,30 @@ img {
   text-align: center;
 }
 @media (min-width: 660px) {
-  .adventuries__title {
+  .adventuries__list::before .adventuries__title {
     text-align: left;
   }
 }
 @media (min-width: 1200px) {
-  .adventuries__title {
+  .adventuries__list::before .adventuries__title {
     margin-bottom: 35px;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
   }
 }
-
-.adventuries__paragraph {
+.adventuries__list::before .adventuries__paragraph {
   font-size: 14px;
   line-height: 24px;
   text-align: center;
 }
 @media (min-width: 660px) {
-  .adventuries__paragraph {
+  .adventuries__list::before .adventuries__paragraph {
     text-align: left;
   }
 }
 @media (min-width: 1200px) {
-  .adventuries__paragraph {
+  .adventuries__list::before .adventuries__paragraph {
     font-size: 18px;
     line-height: 30px;
     text-align: center;
@@ -884,7 +876,6 @@ img {
 }
 
 .page-header__bar {
-  z-index: 1;
   display: flex;
   justify-content: space-between;
   padding-top: 22px;
@@ -1336,6 +1327,11 @@ img {
   }
 }
 
+.tariff-compare__header,
+.tariff-compare {
+  min-width: 153px;
+  min-height: 45px;
+}
 @media (min-width: 660px) {
   .tariff-compare__header,
 .tariff-compare {

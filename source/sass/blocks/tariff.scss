@@ -23,6 +23,9 @@
 
 .tariff-compare__header,
 .tariff-compare {
+  min-width: 153px;
+  min-height: 45px;
+
   @media (min-width: $breakpoint-medium) {
     min-width: 153px;
     min-height: 45px;
@@ -31,8 +34,8 @@
     min-width: 234px;
     min-height: 59px;
   }
-
 }
+
 
 .tariff-compare__header {
     background-color: $color-graphite-gray;
@@ -47,7 +50,7 @@
   display: block;
   font-weight: 300;
   font-size: 24px;
-    line-height: 30px;
+  line-height: 30px;
 }
 
 .tariff-compare {
@@ -58,12 +61,10 @@
     font-size: 18px;
     text-transform: none;
     }
-
 }
 
 .tariff-compare__header--none {
     background-color: $color-light-gray;
-
 }
 
 .tariff-compare__header--hit {
