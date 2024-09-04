@@ -21,8 +21,9 @@
   }
 }
 
-.tariff-compare__header,
-.tariff-compare {
+.tariff-compare__table--tablet .tariff-compare__header,
+.tariff-compare__table--tablet .tariff-compare {
+
   @media (min-width: $breakpoint-medium) {
     min-width: 153px;
     min-height: 45px;
@@ -82,21 +83,19 @@
 }
 
 .tariff-compare--yes {
-  width: 31px;
+  width: 69px;
   height: 21px;
+  padding: 19px;
   background-image: url('../img/icons/yes.svg');
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 19px;
-  padding-bottom: 19px;
 }
 
 .tariff-compare--no {
-  width: 27px;
+  width: 69px;
   height: 27px;
+  padding: 19px;
   background-image: url('../img/icons/no.svg');
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 19px;
-  padding-bottom: 19px;
 }
