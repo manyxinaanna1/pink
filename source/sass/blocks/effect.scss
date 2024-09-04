@@ -15,6 +15,7 @@
   height: 276px;
   background: url(../img/effect-tablet.png);
   background-repeat: no-repeat;
+
   @media (min-width: $breakpoint-large) {
     width: 298px;
     height: 345px;

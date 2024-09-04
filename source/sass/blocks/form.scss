@@ -7,7 +7,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 74px;
-   }
+
+    }
 }
 
 .form__group {
@@ -37,6 +38,7 @@
   }
   @media (min-width: $breakpoint-large) {
     grid-column: 1/-1;
+
   }
 }
 
@@ -147,6 +149,7 @@
   margin: 0;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+
 }
 
 .control__lead {
@@ -215,7 +218,6 @@
     flex-direction: column-reverse;
   }
 }
-
 .form__footer  {
   @media (min-width: $breakpoint-medium) {
     display: grid;
@@ -223,7 +225,6 @@
     gap: 135px;
   }
 }
-
 .form__button {
   margin-bottom: 56px;
   padding: 18px 58px;

@@ -1,5 +1,6 @@
 .page-footer__wrapper {
   margin: 40px auto;
+
   width: 65%;
   @media (min-width: $breakpoint-medium) {
     display: flex;
@@ -11,6 +12,7 @@
 }
 
 .page-footer__logo {
+
   margin-bottom: 41px;
   @media (min-width: $breakpoint-medium) {
     margin-bottom: 0;
