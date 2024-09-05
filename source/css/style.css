@@ -288,12 +288,38 @@ img {
   width: 100%;
 }
 
+.card__wrapper {
+  margin: 0 auto;
+  width: 255px;
+}
+
+@media (min-width: 660px) {
+  .card__wrapper--panorama {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    width: 520px;
+  }
+}
+@media (min-width: 1200px) {
+  .card__wrapper--panorama {
+    width: 874px;
+  }
+}
+
 .card__name {
   padding-top: 25px;
   margin-bottom: 14px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+}
+@media (min-width: 660px) {
+  .card__name {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }
 
 .card__color {
@@ -312,6 +338,27 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+}
+@media (min-width: 660px) {
+  .card__comment {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+}
+
+@media (min-width: 660px) {
+  .catalog-list__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .catalog-list__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 }
 
 .catalog-list__item {
@@ -332,6 +379,7 @@ img {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
+  text-align: center;
 }
 @media (min-width: 660px) {
   .contasts__guestions {
@@ -820,14 +868,26 @@ img {
   color: #D22856;
 }
 
+.foto__paragraph {
+  width: 572px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
 .like {
   display: flex;
   gap: 18px;
+  align-items: center;
 }
 @media (min-width: 660px) {
   .like {
     flex-direction: row-reverse;
     justify-content: space-between;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: flex-end;
+    margin-left: auto;
   }
 }
 
@@ -1114,15 +1174,16 @@ img {
 
 .range__scale {
   position: relative;
-  height: 4px;
-  margin-bottom: 33px;
-  background-color: #DCDCDC;
+  height: 2px;
+  width: 240px;
+  margin: 0 auto;
+  background-color: #283645;
+  border-bottom: 1px solid #283645;
 }
 
 .range__bar {
   position: absolute;
   height: 4px;
-  background-color: #D22856;
 }
 
 .range__toggle {
@@ -1137,7 +1198,7 @@ img {
 
 .toggle--min {
   top: -8px;
-  left: -10px;
+  left: 193px;
 }
 
 .share__paragraph {

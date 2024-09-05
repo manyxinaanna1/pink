@@ -1,13 +1,16 @@
 .range__scale {
   position: relative;
-  height: 4px;
-  margin-bottom: 33px;
-  background-color: #DCDCDC;
+  height: 2px;
+  width: 240px;
+  margin: 0 auto;
+  background-color: $color-graphite-gray;
+  border-bottom: 1px solid rgba(40, 54, 69, 1);
+
 }
 .range__bar {
   position: absolute;
   height: 4px;
-  background-color: $color-purple;
+
 }
 .range__toggle {
 position: absolute;
@@ -20,5 +23,5 @@ cursor: pointer;
 }
 .toggle--min {
   top: -8px;
-  left: -10px;
+  left: 193px;
 }

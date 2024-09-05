@@ -8,7 +8,7 @@
 
   </head>
   <body class="page__body">
-    <header class="page__header page__header--image">
+    <header class="page__header  page__header--image">
 
       <nav class="page-header__nav container page-header__nav--main  page-header__nav--closed">
         <div class="page-header__bar">
@@ -38,34 +38,16 @@
           </ul>
         </div>
       </nav>
-      <div class="header__wrapper container">
-      <h1 class="header__title">Взгляните на жизнь иначе!</h1>
-      <picture class="header__phone">
-        <source media="(min-width: 1200px)" srcset="./img/phone-desktop.png" width="1050" height="645">
-        <source media="(min-width: 660px)" srcset="./img/phone-tablet.png" width="660" height="545">
-        <img class="header__phone" src="./img/phone-mobile.png" width="320" height="286" alt="Изображение телефона">
-      </picture>
-
-
-        <button class="header__button button">Скачать приложение</button>
-        <ul class="header__list">
-          <li class="header__item header__item--apple">
-          </li>
-          <li class="header__item header__item--android">
-          </li>
-          <li class="header__item header__item--microsoft">
-          </li>
-        </ul>
-        <p class="header__paragraph">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-
-    </div>
+      <div class="container">
+        <h1 class="header__title header__title--inner">Фотографии пользователей</h1>
+      </div>
     </header>
-    <main>
-      <header class="look">
-        <h2 class="visually-hidden"> Каталог приложения Pink</h1>
-        <p class="look__paragraph">Взгляните на фотографии, которые выкладывают пользователи!
-          Видите, как не хватает ваших?</p>
-       </header>
+
+    <section class="foto container">
+      <p class="foto__paragraph">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</p>
+    </section>
+
       <section class="page-main__section catalog-list">
         <div class="catalog-list__container">
           <h2 class="visually-hidden">Список фотографий</h2>
@@ -75,108 +57,117 @@
               <source media="(min-width: 660px)" srcset="./img/catalog/panorama-tablet.jpg 1x, ./img/catalog/panorama-tablet@2x.jpg 2x" width="660" height="509">
               <img class="card__img" src="./img/catalog/panorama-mobile.jpg" srcset="./img/catalog/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама" aria-hidden="true">
             </picture>
-
+            <div class="card__wrapper card__wrapper--panorama">
               <p class="card__name">Анна <span class="time">(5 минут назад)</span></p>
-              <p class="card__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="card__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <div class="like">
                 <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
                 <p class="like__description">Нравится: 215</p>
               </div>
+            </div>
 
           </article>
-          <article class="catalog-list__item card">
-            <picture class="card__img">
-              <source media="(min-width: 1200px)" srcset="./img/catalog/photo-1-desktop.jpg 1x, ./img/catalog/photo-1-desktop@2x.jpg 2x" width="300" height="400">
-              <source media="(min-width: 660px)" srcset="./img/catalog/photo-1-tablet.jpg 1x, ./img/catalog/photo-1-tablet@2x.jpg 2x" width="300" height="300">
-              <img class="card__img" src="./img/catalog/photo-1-mobile.jpg" srcset="./img/catalog/photo-1-mobile@2x.jpg 2x" width="320" height="137" alt="Фото машины" aria-hidden="true">
-            </picture>
-
-              <p class="card__name">Левон <span class="time">(5 часов назад)</span></p>
-              <p class="card__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <div class="like">
-                <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
-                <p class="like__description">Нравится: 356</p>
+          <div class="catalog-list__wrapper container">
+            <article class="catalog-list__item card">
+              <picture class="card__img">
+                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-1-desktop.jpg 1x, ./img/catalog/photo-1-desktop@2x.jpg 2x" width="300" height="400">
+                <source media="(min-width: 660px)" srcset="./img/catalog/photo-1-tablet.jpg 1x, ./img/catalog/photo-1-tablet@2x.jpg 2x" width="300" height="300">
+                <img class="card__img" src="./img/catalog/photo-1-mobile.jpg" srcset="./img/catalog/photo-1-mobile@2x.jpg 2x" width="320" height="137" alt="Фото машины" aria-hidden="true">
+              </picture>
+              <div class="card__wrapper">
+                <p class="card__name">Левон <span class="time">(5 часов назад)</span></p>
+                <p class="card__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="like">
+                  <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
+                  <p class="like__description">Нравится: 356</p>
+                </div>
               </div>
 
-          </article>
-          <article class="catalog-list__item card">
-            <picture class="card__img">
-              <source media="(min-width: 1200px)" srcset="./img/catalog/photo-2-desktop.jpg 1x, ./img/catalog/photo-2-desktop@2x.jpg 2x" width="300" height="400">
-              <source media="(min-width: 660px)" srcset="./img/catalog/photo-2-tablet.jpg 1x, ./img/catalog/photo-2-tablet@2x.jpg 2x" width="300" height="300">
-              <img class="card__img" src="./img/catalog/photo-2-mobile.jpg" srcset="./img/catalog/photo-2-mobile@2x.jpg 2x" width="320" height="137" alt="Фасад" aria-hidden="true">
-            </picture>
-
-              <p class="card__name">Борис <span class="time">(20 часов назад)</span></p>
-              <p class="card__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <div class="like">
-                <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
-                <p class="like__description">Нравится: 215</p>
+            </article>
+            <article class="catalog-list__item card">
+              <picture class="card__img">
+                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-2-desktop.jpg 1x, ./img/catalog/photo-2-desktop@2x.jpg 2x" width="300" height="400">
+                <source media="(min-width: 660px)" srcset="./img/catalog/photo-2-tablet.jpg 1x, ./img/catalog/photo-2-tablet@2x.jpg 2x" width="300" height="300">
+                <img class="card__img" src="./img/catalog/photo-2-mobile.jpg" srcset="./img/catalog/photo-2-mobile@2x.jpg 2x" width="320" height="137" alt="Фасад" aria-hidden="true">
+              </picture>
+              <div class="card__wrapper">
+                <p class="card__name">Борис <span class="time">(20 часов назад)</span></p>
+                <p class="card__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="like">
+                  <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
+                  <p class="like__description">Нравится: 215</p>
+                </div>
               </div>
 
-          </article>
-          <article class="catalog-list__item card">
-            <picture class="card__img card__img--header">
-              <source media="(min-width: 1200px)" srcset="./img/catalog/photo-3-desktop.jpg 1x, ./img/catalog/photo-3-desktop@2x.jpg 2x" width="300" height="400">
-              <source media="(min-width: 660px)" srcset="./img/catalog/photo-3-tablet.jpg 1x, ./img/catalog/photo-3-tablet@2x.jpg 2x" width="300" height="300">
-              <img class="card__img" src="./img/catalog/photo-3-mobile.jpg" srcset="./img/catalog/photo-3-mobile@2x.jpg 2x" width="320" height="137" alt="Барабаны" aria-hidden="true">
-            </picture>
-
-              <p class="card__name">Антон <span class="time">(12 часов назад)</span></p>
-              <p class="card__comment">Соседи будут рады!</p>
-              <div class="like">
-                <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
-                <p class="like__description">Нравится: 356</p>
+            </article>
+            <article class="catalog-list__item card">
+              <picture class="card__img card__img--header">
+                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-3-desktop.jpg 1x, ./img/catalog/photo-3-desktop@2x.jpg 2x" width="300" height="400">
+                <source media="(min-width: 660px)" srcset="./img/catalog/photo-3-tablet.jpg 1x, ./img/catalog/photo-3-tablet@2x.jpg 2x" width="300" height="300">
+                <img class="card__img" src="./img/catalog/photo-3-mobile.jpg" srcset="./img/catalog/photo-3-mobile@2x.jpg 2x" width="320" height="137" alt="Барабаны" aria-hidden="true">
+              </picture>
+              <div class="card__wrapper">
+                <p class="card__name">Антон <span class="time">(12 часов назад)</span></p>
+                <p class="card__comment">Соседи будут рады!</p>
+                <div class="like">
+                  <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
+                  <p class="like__description">Нравится: 356</p>
+                </div>
               </div>
 
-          </article>
-          <article class="catalog-list__item card">
-            <picture class="card__img">
-              <source media="(min-width: 1200px)" srcset="./img/catalog/photo-4-desktop.jpg 1x, ./img/catalog/photo-4-desktop@2x.jpg 2x" width="300" height="400">
-              <source media="(min-width: 660px)" srcset="./img/catalog/photo-4-tablet.jpg 1x, ./img/catalog/photo-4-tablet@2x.jpg 2x" width="300" height="300">
-              <img class="card__img" src="./img/catalog/photo-4-mobile.jpg" srcset="./img/catalog/photo-4-mobile@2x.jpg 2x" width="320" height="137" alt="Кубанская" aria-hidden="true">
-            </picture>
-
-              <p class="card__name">Сергей <span class="time">(25 часов назад)</span></p>
-              <p class="card__comment">Самая кубанская в мире!</p>
-              <div class="like">
-                <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
-                <p class="like__description">Нравится: 4</p>
+            </article>
+            <article class="catalog-list__item card">
+              <picture class="card__img">
+                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-4-desktop.jpg 1x, ./img/catalog/photo-4-desktop@2x.jpg 2x" width="300" height="400">
+                <source media="(min-width: 660px)" srcset="./img/catalog/photo-4-tablet.jpg 1x, ./img/catalog/photo-4-tablet@2x.jpg 2x" width="300" height="300">
+                <img class="card__img" src="./img/catalog/photo-4-mobile.jpg" srcset="./img/catalog/photo-4-mobile@2x.jpg 2x" width="320" height="137" alt="Кубанская" aria-hidden="true">
+              </picture>
+              <div class="card__wrapper">
+                <p class="card__name">Сергей <span class="time">(25 часов назад)</span></p>
+                <p class="card__comment">Самая кубанская в мире!</p>
+                <div class="like">
+                  <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
+                  <p class="like__description">Нравится: 4</p>
+                </div>
               </div>
 
-          </article>
-          <article class="catalog-list__item card">
-            <picture class="card__img">
-              <source media="(min-width: 1200px)" srcset="./img/catalog/photo-5-desktop.jpg 1x, ./img/catalog/photo-5-desktop@2x.jpg 2x" width="300" height="400">
-              <source media="(min-width: 660px)" srcset="./img/catalog/photo-5-tablet.jpg 1x, ./img/catalog/photo-5-tablet@2x.jpg 2x" width="300" height="300">
-              <img class="card__img" src="./img/catalog/photo-5-mobile.jpg" srcset="./img/catalog/photo-5-mobile@2x.jpg 2x" width="320" height="137" alt="Горы" aria-hidden="true">
-            </picture>
-
-              <p class="card__name">Максим <span class="time">(40 часов назад)</span></p>
-              <p class="card__comment">Где снег-то?</p>
-              <div class="like">
-                <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
-                <p class="like__description">Нравится: 150</p>
+            </article>
+            <article class="catalog-list__item card">
+              <picture class="card__img">
+                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-5-desktop.jpg 1x, ./img/catalog/photo-5-desktop@2x.jpg 2x" width="300" height="400">
+                <source media="(min-width: 660px)" srcset="./img/catalog/photo-5-tablet.jpg 1x, ./img/catalog/photo-5-tablet@2x.jpg 2x" width="300" height="300">
+                <img class="card__img" src="./img/catalog/photo-5-mobile.jpg" srcset="./img/catalog/photo-5-mobile@2x.jpg 2x" width="320" height="137" alt="Горы" aria-hidden="true">
+              </picture>
+              <div class="card__wrapper">
+                <p class="card__name">Максим <span class="time">(40 часов назад)</span></p>
+                <p class="card__comment">Где снег-то?</p>
+                <div class="like">
+                  <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
+                  <p class="like__description">Нравится: 150</p>
+                </div>
               </div>
 
-          </article>
-          <article class="catalog-list__item card">
-            <picture class="card__img">
-              <source media="(min-width: 1200px)" srcset="./img/catalog/photo-6-desktop.jpg 1x, ./img/catalog/photo-6-desktop@2x.jpg 2x" width="300" height="400">
-              <source media="(min-width: 660px)" srcset="./img/catalog/photo-6-tablet.jpg 1x, ./img/catalog/photo-6-tablet@2x.jpg 2x" width="300" height="300">
-              <img class="card__img" src="./img/catalog/photo-6-mobile.jpg" srcset="./img/catalog/photo-6-mobile@2x.jpg 2x" width="320" height="137" alt="Самолет" aria-hidden="true">
-            </picture>
-
-              <p class="card__name">Надежда <span class="time">(45 часов назад)</span></p>
-              <p class="card__comment">Всем GM и взаимные лайки!</p>
-              <div class="like">
-                <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
-                <p class="like__description">Нравится: 2560</p>
+            </article>
+            <article class="catalog-list__item card">
+              <picture class="card__img">
+                <source media="(min-width: 1200px)" srcset="./img/catalog/photo-6-desktop.jpg 1x, ./img/catalog/photo-6-desktop@2x.jpg 2x" width="300" height="400">
+                <source media="(min-width: 660px)" srcset="./img/catalog/photo-6-tablet.jpg 1x, ./img/catalog/photo-6-tablet@2x.jpg 2x" width="300" height="300">
+                <img class="card__img" src="./img/catalog/photo-6-mobile.jpg" srcset="./img/catalog/photo-6-mobile@2x.jpg 2x" width="320" height="137" alt="Самолет" aria-hidden="true">
+              </picture>
+              <div class="card__wrapper">
+                <p class="card__name">Надежда <span class="time">(45 часов назад)</span></p>
+                <p class="card__comment">Всем GM и взаимные лайки!</p>
+                <div class="like">
+                  <img class="like__image" src="./img/catalog/like.svg" width="13" height="12" alt="Лайк">
+                  <p class="like__description">Нравится: 2560</p>
+                </div>
               </div>
 
-          </article>
+            </article>
+          </div>
           <section class="promotion">
-            <p class="promition__paragraph">Затмите их всех!
-              Выкладывайте все, что накопилось в телефоне!</p>
+            <p class="promition__paragraph">Затмите их всех!</p>
+            <p class="promition__paragraph">Выкладывайте все, что накопилось в телефоне!</p>
           </section>
 
           </div>
@@ -191,7 +182,7 @@
             <img class="filter__icon" src="./img/catalog/crop.svg" width="44" height="44" alt="Обрезать">
             <div class="range">
               <div class="range__scale">
-                <div class="range__bar" style="width: 110px">
+                <div class="range__bar">
                   <button class="range__toggle toggle--min">
                   <span class="visually-hidden">Изменить фильтр</span>
                   </button>

@@ -2,9 +2,15 @@
 .like {
   display: flex;
   gap: 18px;
+  align-items: center;
   @media (min-width: $breakpoint-medium) {
     flex-direction: row-reverse;
     justify-content: space-between;
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    align-self: flex-end;
+    margin-left: auto;
     }
 }
 

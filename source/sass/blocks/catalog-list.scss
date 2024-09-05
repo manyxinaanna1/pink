@@ -1,3 +1,17 @@
+
+.catalog-list__wrapper {
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  @media (min-width: $breakpoint-large) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
 .catalog-list__item {
   background-color: $color-light-gray;
   margin-bottom: 20px;

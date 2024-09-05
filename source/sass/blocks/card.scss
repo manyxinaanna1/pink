@@ -8,12 +8,34 @@
   width: 100%;
 }
 
+.card__wrapper {
+  margin: 0 auto;
+  width: 255px;
+}
+
+.card__wrapper--panorama {
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    width: 520px;
+  }
+  @media (min-width: $breakpoint-large) {
+    width: 874px;
+  }
+}
+
 .card__name {
   padding-top: 25px;
   margin-bottom: 14px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+  @media (min-width: $breakpoint-medium) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }
 .card__color {
   background-color:rgba(242, 242, 242, 1);
@@ -30,4 +52,8 @@
   font-size: 14px;
   line-height: 24px;
   color: rgba(40, 54, 69, 1);
+  @media (min-width: $breakpoint-medium) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
 }
