@@ -40,14 +40,14 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-    @media (min-width: $breakpoint-large) {
-      padding-top: 58px;
-      padding-bottom: 51px;
-    }
 
     @media (min-width: $breakpoint-medium) {
-      width: 688px;
       font-size: 18px;
+    }
+    @media (min-width: $breakpoint-large) {
+      width: 688px;
+      padding-top: 58px;
+      padding-bottom: 51px;
     }
 }
 

@@ -1,6 +1,10 @@
 .foto__paragraph {
-  width: 572px;
+
   font-size: 18px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $breakpoint-large) {
+    width: 572px;
+}
 }

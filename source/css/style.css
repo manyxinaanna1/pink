@@ -239,16 +239,16 @@ img {
   line-height: 30px;
   text-align: center;
 }
-@media (min-width: 1200px) {
-  .blockquote__blockquote {
-    padding-top: 58px;
-    padding-bottom: 51px;
-  }
-}
 @media (min-width: 660px) {
   .blockquote__blockquote {
-    width: 688px;
     font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .blockquote__blockquote {
+    width: 688px;
+    padding-top: 58px;
+    padding-bottom: 51px;
   }
 }
 
@@ -281,6 +281,7 @@ img {
 .card__img {
   display: block;
   margin-bottom: 0;
+  background-size: cover;
 }
 
 .card__img--header {
@@ -869,10 +870,14 @@ img {
 }
 
 .foto__paragraph {
-  width: 572px;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
+}
+@media (min-width: 1200px) {
+  .foto__paragraph {
+    width: 572px;
+  }
 }
 
 .like {
