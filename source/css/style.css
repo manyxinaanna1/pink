@@ -951,7 +951,7 @@ img {
 .page-header__bar {
   z-index: 1;
   display: flex;
-  justify-content: space-between;
+  gap: 150px;
   padding-top: 22px;
   padding-bottom: 21px;
 }
@@ -1231,7 +1231,6 @@ img {
 @media (min-width: 1200px) {
   .site-menu {
     display: flex;
-    justify-content: flex-end;
     flex-wrap: wrap;
   }
 }
