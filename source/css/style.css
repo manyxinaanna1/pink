@@ -324,21 +324,21 @@ img {
 }
 
 .card__color {
-  background-color: #f2f2f2;
+  background-color: rgb(242, 242, 242);
 }
 
 .time {
   margin-top: 25px;
   font-size: 12px;
   line-height: 24px;
-  color: #283645;
+  color: rgb(40, 54, 69);
 }
 
 .card__comment {
   margin-bottom: 23px;
   font-size: 14px;
   line-height: 24px;
-  color: #283645;
+  color: rgb(40, 54, 69);
 }
 @media (min-width: 660px) {
   .card__comment {
@@ -945,13 +945,13 @@ img {
 
 .page-header__nav {
   margin-bottom: 110px;
-  background: rgba 0, 0, 0, 0.3;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__bar {
   z-index: 1;
   display: flex;
-  gap: 150px;
+  gap: 170px;
   padding-top: 22px;
   padding-bottom: 21px;
 }
@@ -1017,24 +1017,18 @@ img {
   }
 }
 
-.header__title--main {
-  margin-bottom: 34px;
-}
 @media (min-width: 660px) {
   .header__title--main {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-bottom: 29px;
-    margin-top: 0;
-    margin-left: 51px;
-    width: 300px;
+    width: 215px;
     font-size: 40px;
     line-height: 48px;
   }
 }
 @media (min-width: 1200px) {
   .header__title--main {
-    margin-bottom: 51px;
+    margin: 6px 0 29px 51px;
     font-size: 50px;
     line-height: 68px;
   }
@@ -1182,7 +1176,7 @@ img {
   width: 240px;
   margin: 0 auto;
   background-color: #283645;
-  border-bottom: 1px solid #283645;
+  border-bottom: 1px solid rgb(40, 54, 69);
 }
 
 .range__bar {
@@ -1225,6 +1219,7 @@ img {
 
 .site-menu {
   margin: 0;
+  margin-top: 16px;
   padding: 0;
   list-style-type: none;
 }
@@ -1232,6 +1227,7 @@ img {
   .site-menu {
     display: flex;
     flex-wrap: wrap;
+    gap: 80px;
   }
 }
 
@@ -1255,7 +1251,6 @@ img {
 
 .site-menu__link {
   display: block;
-  padding: 25px;
   font-size: 18px;
   line-height: 32px;
   text-decoration: none;
@@ -1402,14 +1397,14 @@ img {
 
 @media (min-width: 660px) {
   .tariff-compare__table--tablet .tariff-compare__header,
-.tariff-compare__table--tablet .tariff-compare {
+  .tariff-compare__table--tablet .tariff-compare {
     min-width: 153px;
     min-height: 45px;
   }
 }
 @media (min-width: 1200px) {
   .tariff-compare__table--tablet .tariff-compare__header,
-.tariff-compare__table--tablet .tariff-compare {
+  .tariff-compare__table--tablet .tariff-compare {
     min-width: 234px;
     min-height: 59px;
   }
