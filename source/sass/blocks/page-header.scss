@@ -119,12 +119,16 @@
   }
 }
 
-.header__phone {
+.header__picture {
   grid-column: 1/34;
   grid-row: 1/-1;
 
 }
 
+.header__phone {
+  display: block;
+  object-fit: contain;
+}
 
 
 .header__button {

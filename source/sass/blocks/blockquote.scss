@@ -8,9 +8,10 @@
   }
 }
 
-.blockquote__image {
+.blockquote__blockquote::before {
   display: none;
   @media (min-width: $breakpoint-large) {
+    content: "";
     display: block;
     width: 79px;
     height: 63px;
@@ -20,6 +21,7 @@
     background-position: top center;
   }
 }
+
 .blockquote__author {
   margin: 0;
   margin-bottom: 31px;
