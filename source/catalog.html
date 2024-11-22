@@ -178,23 +178,41 @@
           <img class="filter__img" src="./img/catalog/photo-7-mobile.jpg" srcset="./img/catalog/photo-7-mobile@2x.jpg 2x" width="280" height="374" alt="Зимний лес" aria-hidden="true">
         </picture>
         <ul class="filter__list">
-          <li class="filter__item">
-            <img class="filter__icon" src="./img/catalog/crop.svg" width="44" height="44" alt="Обрезать">
+          <li class="filter__item filter__item--crop">
+            <button class="filter__icon filter__icon--crop" type="button" aria-label="Обрезать"> </button>
             <div class="range">
               <div class="range__scale">
                 <div class="range__bar">
-                  <button class="range__toggle toggle--min">
+                  <button class="range__toggle range__toggle--crop">
                   <span class="visually-hidden">Изменить фильтр</span>
                   </button>
                 </div>
               </div>
-             </div>
+            </div>
           </li>
-          <li class="filter__item">
-            <img class="filter__icon" src="./img/catalog/fill.svg" width="44" height="44" alt="Залить">
+          <li class="filter__item filter__item--fill">
+            <button class="filter__icon filter__icon--fill" type="button" aria-label="Залить"> </button>
+            <div class="range">
+              <div class="range__scale">
+                <div class="range__bar">
+                  <button class="range__toggle range__toggle--fill">
+                  <span class="visually-hidden">Изменить фильтр</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </li>
-          <li class="filter__item">
-            <img class="filter__icon" src="./img/catalog/contrast.svg" width="44" height="44" alt="Контраст">
+          <li class="filter__item filter__item--contrast">
+            <button class="filter__icon filter__icon--contrast" type="button" aria-label="Контраст"> </button>
+            <div class="range">
+              <div class="range__scale">
+                <div class="range__bar">
+                  <button class="range__toggle range__toggle--contrast">
+                  <span class="visually-hidden">Изменить фильтр</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </section>

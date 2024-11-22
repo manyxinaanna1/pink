@@ -8,15 +8,39 @@
   list-style-type: none;
 }
 
+.filter__item::after {
+  content: "";
+}
+
+.filter__item--crop::after {
+  background-image: url("../img/catalog/crop.svg");
+}
+
+.filter__item--fill::after {
+  background-image: url("../img/catalog/fill.svg");
+}
+
+.filter__item--contrast::after {
+  background-image: url("../img/catalog/contrast.svg");
+}
+
 .filter__icon {
-  display: block;
-  object-fit: cover;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
   @media (min-width: $breakpoint-medium) {
-    width: 22px;
-    height: 22px;
+    display: none;
   }
-  @media (min-width: $breakpoint-large) {
-    width: 44px;
-    height: 44px;
-  }
+}
+
+.filter__icon--crop {
+  background-image: url("../img/catalog/crop.svg");
+}
+
+.filter__icon--fill {
+  background-image: url("../img/catalog/fill.svg");
+}
+
+.filter__icon--contrast {
+  background-image: url("../img/catalog/contrast.svg");
 }

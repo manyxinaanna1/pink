@@ -21,7 +21,18 @@ border: 2px solid $color-purple;
 border-radius: 50%;
 cursor: pointer;
 }
-.toggle--min {
+
+.range__toggle--crop {
   top: -8px;
   left: 193px;
+}
+
+.range__toggle--fill {
+  top: -8px;
+  left: 25px;
+}
+
+.range__toggle--contrast {
+  top: -8px;
+  left: 96px;
 }
