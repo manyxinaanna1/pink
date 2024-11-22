@@ -120,7 +120,7 @@
 }
 
 .header__picture {
-  grid-column: 1/34;
+  grid-column: 1/3;
   grid-row: 1/-1;
 
 }
@@ -133,7 +133,7 @@
 
 .header__button {
   margin-bottom: 35px;
-  padding: 15px 46px;
+  padding: 11px 46px;
   background-color: transparent;
   color: $color-white;
   border: 3px solid $color-white;

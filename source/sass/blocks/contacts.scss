@@ -59,12 +59,16 @@
 }
 
 .contacts__map-container::after {
+  content: "";
   position: absolute;
+  display: block;
   width: 320px;
   height: 100px;
   top: 0;
   left: 50℅;
   transform: translate(-50%, 0);
+
+  background-image: url("../img/triangle_white_footer.svg");
   @media (min-width: $breakpoint-medium) {
     width: 660px;
     height: 100px;
