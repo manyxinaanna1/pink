@@ -128,12 +128,13 @@
 .header__phone {
   display: block;
   object-fit: contain;
+  align-self: end;
 }
 
 
 .header__button {
   margin-bottom: 35px;
-  padding: 11px 46px;
+  padding: 11px 15px;
   background-color: transparent;
   color: $color-white;
   border: 3px solid $color-white;
@@ -144,7 +145,9 @@
   @media (min-width: $breakpoint-medium) {
     grid-column: 1/2;
     grid-row: 2/3;
-
+  }
+  @media (min-width: $breakpoint-large)  {
+    font-size: 21px;
   }
 }
 
