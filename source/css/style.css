@@ -1010,7 +1010,7 @@ img {
 @media (min-width: 660px) {
   .header__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 300px 1fr;
     grid-template-rows: auto auto auto auto;
   }
 }
@@ -1097,7 +1097,7 @@ img {
   .header__title--main {
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 215px;
+    width: 300px;
     font-size: 40px;
     line-height: 48px;
   }
