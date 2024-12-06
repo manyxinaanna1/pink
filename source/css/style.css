@@ -103,7 +103,7 @@ img {
     content: "";
     display: block;
     width: 186px;
-    height: 382px;
+    height: 300px;
     margin: 0 auto 59px auto;
     background-repeat: no-repeat;
   }
@@ -1012,6 +1012,7 @@ img {
 @media (min-width: 1200px) {
   .page-header {
     background-image: url("../img/bg-desktop.jpg");
+    margin-bottom: 60px;
   }
 }
 
@@ -1028,7 +1029,7 @@ img {
 }
 
 .page-header__nav {
-  margin-bottom: 110px;
+  margin-bottom: 80px;
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -1109,7 +1110,7 @@ img {
 }
 @media (min-width: 1200px) {
   .page-header__title--main {
-    margin: 6px 0 29px 0;
+    margin: 36px 0 37px 0;
     font-size: 50px;
     line-height: 68px;
   }
@@ -1125,7 +1126,7 @@ img {
 }
 @media (min-width: 1200px) {
   .page-header__title--inner {
-    padding-bottom: 104px;
+    padding-bottom: 89px;
   }
 }
 
@@ -1134,6 +1135,7 @@ img {
   grid-row: 1/-1;
   align-self: flex-end;
   margin-bottom: -5px;
+  margin-left: 78px;
 }
 
 .page-header__phone {
@@ -1144,7 +1146,7 @@ img {
 
 .page-header__button {
   margin-bottom: 35px;
-  padding: 11px 15px;
+  padding: 15px;
   background-color: transparent;
   color: #ffffff;
   border: 3px solid #ffffff;
@@ -1178,9 +1180,7 @@ img {
 }
 @media (min-width: 660px) {
   .page-header__list {
-    margin-top: 38px;
-    margin-left: 48px;
-    margin-right: 48px;
+    margin: 38px 48px 20px 48px;
     grid-column: 1/2;
     grid-row: 3/4;
   }
@@ -1228,6 +1228,7 @@ img {
 }
 @media (min-width: 1200px) {
   .page-header__paragraph {
+    margin-top: 30px;
     padding-bottom: 108px;
   }
 }

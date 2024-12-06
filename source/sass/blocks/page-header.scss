@@ -9,6 +9,7 @@
     }
     @media (min-width: $breakpoint-large) {
       background-image: url('../img/bg-desktop.jpg');
+      margin-bottom: 60px;
     }
 }
 
@@ -24,7 +25,7 @@
 }
 
 .page-header__nav {
-  margin-bottom: 110px;
+  margin-bottom: 80px;
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -99,7 +100,7 @@
     grid-row: 1/2;
   }
   @media (min-width: $breakpoint-large) {
-    margin: 6px 0 29px 0;
+    margin: 36px 0 37px 0;
     font-size: 50px;
     line-height: 68px
   }
@@ -111,7 +112,7 @@
     padding-bottom: 74px;
   }
   @media (min-width: $breakpoint-large)  {
-    padding-bottom: 104px;
+    padding-bottom: 89px;
   }
 }
 
@@ -120,6 +121,7 @@
   grid-row: 1/-1;
   align-self: flex-end;
   margin-bottom: -5px;
+  margin-left: 78px;
 }
 
 .page-header__phone {
@@ -131,7 +133,7 @@
 
 .page-header__button {
   margin-bottom: 35px;
-  padding: 11px 15px;
+  padding: 15px;
   background-color: transparent;
   color: $color-white;
   border: 3px solid $color-white;
@@ -159,9 +161,8 @@
   min-height: 56px;
   list-style-type: none;
   @media (min-width: $breakpoint-medium) {
-    margin-top: 38px;
-    margin-left: 48px;
-    margin-right: 48px;
+    margin: 38px 48px 20px 48px;
+
     grid-column: 1/2;
     grid-row: 3/4;
 
@@ -206,7 +207,8 @@
     font-size: 18px;
   }
   @media (min-width: $breakpoint-large) {
-   padding-bottom: 108px;
+    margin-top: 30px;
+    padding-bottom: 108px;
 
   }
 }
