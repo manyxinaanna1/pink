@@ -1132,6 +1132,8 @@ img {
 .page-header__picture {
   grid-column: 1/3;
   grid-row: 1/-1;
+  align-self: flex-end;
+  margin-bottom: -5px;
 }
 
 .page-header__phone {

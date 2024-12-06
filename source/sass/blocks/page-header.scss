@@ -118,7 +118,8 @@
 .page-header__picture {
   grid-column: 1/3;
   grid-row: 1/-1;
-
+  align-self: flex-end;
+  margin-bottom: -5px;
 }
 
 .page-header__phone {
@@ -198,14 +199,15 @@
   line-height: 24px;
   font-weight: 300;
   @media (min-width: $breakpoint-medium) {
-    grid-column: 1/2;
-    grid-row: 4/5;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
     margin-top: 34px;
     margin-left: 5px;
     font-size: 18px;
   }
   @media (min-width: $breakpoint-large) {
    padding-bottom: 108px;
+
   }
 }
 
