@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   background-color: aqua;
 }
@@ -458,7 +457,7 @@ img {
   width: 320px;
   height: 100px;
   top: 0;
-  left: 50℅;
+  left: 50%;
   transform: translate(-50%, 0);
   background-image: url("../img/triangle_white_footer.svg");
 }
@@ -471,7 +470,7 @@ img {
 @media (min-width: 1200px) {
   .contacts__map-container::after {
     width: 1200px;
-    height: 100px;
+    height: 122px;
   }
 }
 
@@ -500,8 +499,12 @@ img {
 }
 
 .filter {
-  display: flex;
   background-color: #F2F2F2;
+}
+@media (min-width: 660px) {
+  .filter {
+    display: flex;
+  }
 }
 
 .filter__list {
@@ -512,6 +515,7 @@ img {
 
 .filter__item::after {
   content: "";
+  background-repeat: no-repeat;
 }
 
 .filter__item--crop::after {
@@ -527,9 +531,13 @@ img {
 }
 
 .filter__icon {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  border: none;
+  background-repeat: no-repeat;
 }
 @media (min-width: 660px) {
   .filter__icon {
@@ -989,7 +997,7 @@ img {
   }
 }
 
-.page__header {
+.page-header {
   background-color: #283645;
   color: #ffffff;
   background-repeat: no-repeat;
@@ -997,18 +1005,18 @@ img {
   background-size: cover;
 }
 @media (min-width: 400px) {
-  .page__header {
+  .page-header {
     background-image: url("../img/bg-tablet.jpg");
   }
 }
 @media (min-width: 1200px) {
-  .page__header {
+  .page-header {
     background-image: url("../img/bg-desktop.jpg");
   }
 }
 
 @media (min-width: 660px) {
-  .header__wrapper {
+  .page-header__wrapper {
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: auto auto auto auto;
@@ -1072,7 +1080,7 @@ img {
   }
 }
 
-.header__title {
+.page-header__title {
   margin: 0;
   font-weight: 300;
   font-size: 24px;
@@ -1081,58 +1089,58 @@ img {
   color: #ffffff;
 }
 @media (min-width: 660px) {
-  .header__title {
+  .page-header__title {
     font-size: 40px;
     line-height: 48px;
   }
 }
 @media (min-width: 1200px) {
-  .header__title {
+  .page-header__title {
     font-size: 50px;
     line-height: 68px;
   }
 }
 
 @media (min-width: 660px) {
-  .header__title--main {
+  .page-header__title--main {
     grid-column: 1/2;
     grid-row: 1/2;
   }
 }
 @media (min-width: 1200px) {
-  .header__title--main {
+  .page-header__title--main {
     margin: 6px 0 29px 0;
     font-size: 50px;
     line-height: 68px;
   }
 }
 
-.header__title--inner {
+.page-header__title--inner {
   padding-bottom: 51px;
 }
 @media (min-width: 660px) {
-  .header__title--inner {
+  .page-header__title--inner {
     padding-bottom: 74px;
   }
 }
 @media (min-width: 1200px) {
-  .header__title--inner {
+  .page-header__title--inner {
     padding-bottom: 104px;
   }
 }
 
-.header__picture {
+.page-header__picture {
   grid-column: 1/3;
   grid-row: 1/-1;
 }
 
-.header__phone {
+.page-header__phone {
   display: block;
   object-fit: contain;
   align-self: end;
 }
 
-.header__button {
+.page-header__button {
   margin-bottom: 35px;
   padding: 11px 15px;
   background-color: transparent;
@@ -1144,18 +1152,18 @@ img {
   font-weight: 700;
 }
 @media (min-width: 660px) {
-  .header__button {
+  .page-header__button {
     grid-column: 1/2;
     grid-row: 2/3;
   }
 }
 @media (min-width: 1200px) {
-  .header__button {
+  .page-header__button {
     font-size: 21px;
   }
 }
 
-.header__list {
+.page-header__list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1167,7 +1175,7 @@ img {
   list-style-type: none;
 }
 @media (min-width: 660px) {
-  .header__list {
+  .page-header__list {
     margin-top: 38px;
     margin-left: 48px;
     margin-right: 48px;
@@ -1176,39 +1184,39 @@ img {
   }
 }
 
-.header__item:not(:last-child) {
+.page-header__item:not(:last-child) {
   margin-right: 35px;
 }
 
-.header__item--apple {
+.page-header__item--apple {
   width: 47px;
   height: 56px;
   background: url("../img/apple-logo.svg");
   background-repeat: no-repeat;
 }
 
-.header__item--android {
+.page-header__item--android {
   width: 43px;
   height: 47px;
   background: url("../img/android-logo.svg");
   background-repeat: no-repeat;
 }
 
-.header__item--microsoft {
+.page-header__item--microsoft {
   width: 44px;
   height: 41px;
   background: url("../img/microsoft-logo.svg");
   background-repeat: no-repeat;
 }
 
-.header__paragraph {
+.page-header__paragraph {
   padding-bottom: 38px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
 }
 @media (min-width: 660px) {
-  .header__paragraph {
+  .page-header__paragraph {
     grid-column: 1/2;
     grid-row: 4/5;
     margin-top: 34px;
@@ -1217,7 +1225,7 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  .header__paragraph {
+  .page-header__paragraph {
     padding-bottom: 108px;
   }
 }

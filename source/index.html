@@ -8,7 +8,7 @@
 
   </head>
   <body class="page__body">
-    <header class="page__header page__header--image">
+    <header class="page-header page-header--image">
 
       <nav class="page-header__nav container page-header__nav--main  page-header__nav--closed">
         <div class="page-header__bar">
@@ -24,23 +24,23 @@
           </button>
           <ul class="page-header__menu site-menu site-menu--main">
             <li class="site-menu__item site-menu__item--active">
-              <a class="site-menu__link">Главная</a>
+              <a class="site-menu__link" href="index.html">Главная</a>
             </li>
             <li class="site-menu__item">
-              <a href="catalog.html" class="site-menu__link">Фотографии</a>
+              <a class="site-menu__link" href="catalog.html">Фотографии</a>
             </li>
             <li class="site-menu__item">
-              <a href="form.html" class="site-menu__link">Конкурс</a>
+              <a class="site-menu__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-menu__item">
-              <a href="form.html" class="site-menu__link">HTML Academy</a>
+              <a class="site-menu__link" href="form.html">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="header__wrapper container">
-      <h1 class="header__title header__title--main">Взгляните на жизнь иначе!</h1>
-      <div class="header__picture">
+      <div class="page-header__wrapper container">
+      <h1 class="page-header__title page-header__title--main">Взгляните на жизнь иначе!</h1>
+      <div class="page-header__picture">
         <picture>
           <source media="(min-width: 1200px)" srcset="./img/phone-desktop.png" width="1050" height="645">
           <source media="(min-width: 660px)" srcset="./img/phone-tablet.png" width="660" height="545">
@@ -49,13 +49,13 @@
       </div>
 
 
-        <button class="header__button button">Скачать приложение</button>
-        <ul class="header__list">
-          <li class="header__item header__item--apple">
+        <button class="page-header__button button">Скачать приложение</button>
+        <ul class="page-header__list">
+          <li class="page-header__item page-header__item--apple">
           </li>
-          <li class="header__item header__item--android">
+          <li class="page-header__item page-header__item--android">
           </li>
-          <li class="header__item header__item--microsoft">
+          <li class="page-header__item page-header__item--microsoft">
           </li>
         </ul>
         <p class="header__paragraph">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -65,6 +65,7 @@
     <main>
       <section class="promo">
         <div class="container">
+          <h2 class="visually-hidden"> Промо текст: "Устали от серости мегаполиса?"</h2>
           <p class="promo__paragraph">Устали от серости мегаполиса?</p>
           <p class="promo__paragraph">Нам есть, что вам <br> предложить!</p>
         </div>
@@ -94,13 +95,14 @@
           <div class="effect__image">
           </div>
           <div class="effect__text">
-            <h1 class="effect__title">Эффект на 24 часа!</h1>
+            <h2 class="effect__title">Эффект на 24 часа!</h2>
             <p class="effect__paragraph">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="effect__link">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
       <section class="blockquote container">
+        <h2 class="visually-hidden">Цитата пользователя</h2>
         <div class="blockquote-wrapper">
           <p class="blockquote__paragraph">25 лет, водитель трамвая</p>
           <cite class="blockquote__author">Николай Петров</cite>

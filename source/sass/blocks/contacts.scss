@@ -65,7 +65,7 @@
   width: 320px;
   height: 100px;
   top: 0;
-  left: 50℅;
+  left: 50%;
   transform: translate(-50%, 0);
 
   background-image: url("../img/triangle_white_footer.svg");
@@ -75,7 +75,7 @@
   }
   @media (min-width: $breakpoint-large) {
     width: 1200px;
-    height: 100px;
+    height: 122px;
   }
 }
 

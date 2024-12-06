@@ -1,6 +1,8 @@
 .filter {
-  display: flex;
   background-color: $color-light-gray;
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+  }
 }
 
 .filter__list {
@@ -11,6 +13,7 @@
 
 .filter__item::after {
   content: "";
+  background-repeat: no-repeat;
 }
 
 .filter__item--crop::after {
@@ -26,9 +29,13 @@
 }
 
 .filter__icon {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  border: none;
+  background-repeat: no-repeat;
   @media (min-width: $breakpoint-medium) {
     display: none;
   }

@@ -1,4 +1,4 @@
-.page__header {
+.page-header {
   background-color: $color-graphite-gray;
   color: $color-white;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@
     }
 }
 
-.header__wrapper {
+.page-header__wrapper {
   @media (min-width: $breakpoint-medium) {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -75,7 +75,7 @@
   }
 }
 
-.header__title {
+.page-header__title {
   margin: 0;
   font-weight: 300;
   font-size: 24px;
@@ -92,7 +92,7 @@
   }
 }
 
-.header__title--main {
+.page-header__title--main {
 
   @media (min-width: $breakpoint-medium) {
     grid-column: 1/2;
@@ -105,7 +105,7 @@
   }
 }
 
-.header__title--inner {
+.page-header__title--inner {
   padding-bottom: 51px;
   @media (min-width: $breakpoint-medium)  {
     padding-bottom: 74px;
@@ -115,20 +115,20 @@
   }
 }
 
-.header__picture {
+.page-header__picture {
   grid-column: 1/3;
   grid-row: 1/-1;
 
 }
 
-.header__phone {
+.page-header__phone {
   display: block;
   object-fit: contain;
   align-self: end;
 }
 
 
-.header__button {
+.page-header__button {
   margin-bottom: 35px;
   padding: 11px 15px;
   background-color: transparent;
@@ -147,7 +147,7 @@
   }
 }
 
-.header__list {
+.page-header__list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -167,32 +167,32 @@
   }
 }
 
-.header__item:not(:last-child) {
+.page-header__item:not(:last-child) {
   margin-right: 35px
 }
 
-.header__item--apple {
+.page-header__item--apple {
   width: 47px;
   height: 56px;
   background: url('../img/apple-logo.svg');
   background-repeat: no-repeat;
 }
 
-.header__item--android {
+.page-header__item--android {
   width: 43px;
   height: 47px;
   background: url('../img/android-logo.svg');
   background-repeat: no-repeat;
 }
 
-.header__item--microsoft {
+.page-header__item--microsoft {
   width: 44px;
   height: 41px;
   background: url('../img/microsoft-logo.svg');
   background-repeat: no-repeat;
 }
 
-.header__paragraph {
+.page-header__paragraph {
   padding-bottom: 38px;
   font-size: 14px;
   line-height: 24px;
