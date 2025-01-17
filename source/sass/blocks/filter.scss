@@ -2,6 +2,11 @@
   background-color: $color-light-gray;
   @media (min-width: $breakpoint-medium) {
     display: flex;
+    gap: 49px;
+  }
+  @media (min-width: $breakpoint-large) {
+    display: flex;
+    gap: 90px;
   }
 }
 
@@ -13,8 +18,9 @@
 
 .filter__item {
   display: flex;
-  gap: 29px;
+  gap: 49px;
   align-items: center;
+  margin-bottom: 27px;
 }
 
 .filter__item::before {

@@ -14,8 +14,8 @@
 }
 .range__toggle {
 position: absolute;
-width: 20px;
-height: 20px;
+width: 16px;
+height: 16px;
 background: #EBEBEB;
 border: 2px solid $color-purple;
 border-radius: 50%;
@@ -23,16 +23,16 @@ cursor: pointer;
 }
 
 .range__toggle--crop {
-  top: -8px;
-  left: 193px;
+  top: -6px;
+  left: 231px;
 }
 
 .range__toggle--fill {
-  top: -8px;
-  left: 25px;
+  top: -6px;
+  left: 34px;
 }
 
 .range__toggle--contrast {
-  top: -8px;
-  left: 96px;
+  top: -6px;
+  left: 136px;
 }
