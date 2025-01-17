@@ -282,6 +282,7 @@ img {
 
 .card__img {
   display: block;
+  width: 100%;
   margin-bottom: 0;
   object-fit: cover;
 }
@@ -367,6 +368,10 @@ img {
 .catalog-list__item {
   background-color: #F2F2F2;
   margin-bottom: 20px;
+}
+
+.catalog-list__img {
+  width: 100%;
 }
 
 .color__gradient {

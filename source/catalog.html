@@ -56,11 +56,13 @@
 
             <article class="catalog-list__item card">
               <h2 class="visually-hidden">Комментарий пользователя приложения</h2>
-              <picture class="card__img">
-                <source media="(min-width: 1200px)" srcset="./img/catalog/panorama-desktop.jpg 1x, ./img/catalog/panorama-desktop@2x.jpg 2x" width="1200" height="506">
-                <source media="(min-width: 660px)" srcset="./img/catalog/panorama-tablet.jpg 1x, ./img/catalog/panorama-tablet@2x.jpg 2x" width="660" height="509">
-                <img class="card__img" src="./img/catalog/panorama-mobile.jpg" srcset="./img/catalog/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама" aria-hidden="true">
-              </picture>
+              <div class="catalog-list__img">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/catalog/panorama-desktop.jpg 1x, ./img/catalog/panorama-desktop@2x.jpg 2x" width="1200" height="506">
+                  <source media="(min-width: 660px)" srcset="./img/catalog/panorama-tablet.jpg 1x, ./img/catalog/panorama-tablet@2x.jpg 2x" width="660" height="509">
+                  <img class="card__img" src="./img/catalog/panorama-mobile.jpg" srcset="./img/catalog/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама" aria-hidden="true">
+                </picture>
+             </div>
               <div class="card__wrapper card__wrapper--panorama">
                 <p class="card__name">Анна <span class="time">(5 минут назад)</span></p>
                 <p class="card__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
