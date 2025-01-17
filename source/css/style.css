@@ -374,7 +374,9 @@ img {
   width: 100%;
 }
 
-.color__gradient {
+.color__background::before {
+  content: "";
+  display: block;
   min-height: 90px;
   background: linear-gradient(to bottom right, #ffffff 50%, #F2F2F2 50%);
 }
