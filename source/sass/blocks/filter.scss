@@ -11,7 +11,13 @@
   list-style-type: none;
 }
 
-.filter__item::after {
+.filter__item {
+  display: flex;
+  gap: 29px;
+  align-items: center;
+}
+
+.filter__item::before {
   content: "";
   display: block;
   width: 22px;
@@ -25,15 +31,15 @@
     }
 }
 
-.filter__item--crop::after {
+.filter__item--crop::before {
   background-image: url("../img/catalog/crop.svg");
 }
 
-.filter__item--fill::after {
+.filter__item--fill::before {
   background-image: url("../img/catalog/fill.svg");
 }
 
-.filter__item--contrast::after {
+.filter__item--contrast::before {
   background-image: url("../img/catalog/contrast.svg");
 }
 

@@ -514,7 +514,13 @@ img {
   list-style-type: none;
 }
 
-.filter__item::after {
+.filter__item {
+  display: flex;
+  gap: 29px;
+  align-items: center;
+}
+
+.filter__item::before {
   content: "";
   display: block;
   width: 22px;
@@ -523,22 +529,22 @@ img {
   background-repeat: no-repeat;
 }
 @media (min-width: 1200px) {
-  .filter__item::after {
+  .filter__item::before {
     width: 44px;
     height: 44px;
     background-size: 44px 44px;
   }
 }
 
-.filter__item--crop::after {
+.filter__item--crop::before {
   background-image: url("../img/catalog/crop.svg");
 }
 
-.filter__item--fill::after {
+.filter__item--fill::before {
   background-image: url("../img/catalog/fill.svg");
 }
 
-.filter__item--contrast::after {
+.filter__item--contrast::before {
   background-image: url("../img/catalog/contrast.svg");
 }
 
