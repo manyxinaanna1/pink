@@ -95,7 +95,7 @@
 @media (min-width: $breakpoint-medium) {
     position: relative;
     display: grid;
-    grid-template-columns: max-content minmax(200px, 1fr);
+    grid-template-columns: auto minmax(200px, 1fr);
     align-items: center;
     gap: 26px;
   }
