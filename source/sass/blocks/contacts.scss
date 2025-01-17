@@ -63,19 +63,20 @@
   position: absolute;
   display: block;
   width: 320px;
-  height: 100px;
+  height: 123px;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
 
   background-image: url("../img/triangle_white_footer.svg");
+  background-repeat: no-repeat;
   @media (min-width: $breakpoint-medium) {
     width: 660px;
-    height: 100px;
+    height: 123px;
   }
   @media (min-width: $breakpoint-large) {
     width: 1200px;
-    height: 122px;
+    height: 123px;
   }
 }
 
