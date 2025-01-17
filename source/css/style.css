@@ -516,7 +516,18 @@ img {
 
 .filter__item::after {
   content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-size: 22px 22px;
   background-repeat: no-repeat;
+}
+@media (min-width: 1200px) {
+  .filter__item::after {
+    width: 44px;
+    height: 44px;
+    background-size: 44px 44px;
+  }
 }
 
 .filter__item--crop::after {
