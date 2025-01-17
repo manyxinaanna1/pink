@@ -186,38 +186,7 @@
   }
 }
 
-.field__input {
-  min-width: 100px;
-  padding: 15px 16px;
-  color: $color-graphite-gray;
-  border: 2px solid #E5E5E5;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 30px;
-}
 
-.field__input--textarea {
-  width: 100%;
-  padding: 25px;
-}
-
-.field__wrapper {
-  position: relative;
-}
-
-.field__icon {
-  position: absolute;
-  right: 20px;
-  top: calc(50% - 12px);
-}
-
-.field--contacts {
-  display: flex;
-  flex-direction: column;
-  @media (min-width: $breakpoint-medium) {
-    flex-direction: column-reverse;
-  }
-}
 .form__footer  {
   @media (min-width: $breakpoint-medium) {
     display: grid;
