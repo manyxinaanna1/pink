@@ -1,38 +1,15 @@
-.tariff-compare__table {
+.tariff__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tariff-compare {
   background-color: $color-white;
-  border-collapse: collapse;
-}
-
-.tariff-compare__table--tablet .tariff-compare__header:not(:first-child),
-.tariff-compare__table--tablet .tariff-compare {
-    border: 2px solid #E5E5E5;
-}
-
-.tariff-compare__table--mobile {
-  @media (min-width: $breakpoint-medium) {
-    display: none;
-  }
-}
-
-.tariff-compare__table--tablet {
-  display: none;
-  @media (min-width: $breakpoint-medium) {
-    display: block;
-  }
-}
-
-.tariff-compare__table--tablet .tariff-compare__header,
-.tariff-compare__table--tablet .tariff-compare {
-
-  @media (min-width: $breakpoint-medium) {
-    min-width: 153px;
-    min-height: 45px;
-  }
-  @media (min-width: $breakpoint-large) {
-    min-width: 234px;
-    min-height: 59px;
-  }
-
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .tariff-compare__header {
@@ -42,29 +19,6 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
-}
-
-.tariff-compare--element {
-  display: block;
-  font-weight: 300;
-  font-size: 24px;
-    line-height: 30px;
-}
-
-.tariff-compare {
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  @media (min-width: $breakpoint-medium) {
-    font-size: 18px;
-    text-transform: none;
-    }
-
-}
-
-.tariff-compare__header--none {
-    background-color: $color-light-gray;
-
 }
 
 .tariff-compare__header--hit {
@@ -78,23 +32,21 @@
   }
 }
 
-.tariff-compare--name {
-    padding: 23px 22px;
-}
+
 
 .tariff-compare--yes {
-  width: 69px;
+  display: block;
+  width: 31px;
   height: 21px;
-  padding: 19px;
   background-image: url('../img/icons/yes.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .tariff-compare--no {
-  width: 69px;
+  display: block;
+  width: 27px;
   height: 27px;
-  padding: 19px;
   background-image: url('../img/icons/no.svg');
   background-repeat: no-repeat;
   background-position: center;
