@@ -7,15 +7,21 @@
 
 .tariff-compare {
   display: flex;
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .tariff-compare__header {
-    background-color: $color-graphite-gray;
-    color: $color-white;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-graphite-gray;
+  color: $color-white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .tariff-compare__header--hit {
@@ -50,6 +56,9 @@
   text-transform: uppercase;
   font-weight:14px;
   line-height: 30px;
+  @media (min-width: $breakpoint-medium) {
+    display: none;
+  }
 }
 
 

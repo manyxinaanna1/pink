@@ -1552,8 +1552,16 @@ img {
 .tariff-compare {
   display: flex;
 }
+@media (min-width: 660px) {
+  .tariff-compare {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 .tariff-compare__header {
+  display: flex;
+  flex-direction: column;
   background-color: #283645;
   color: #ffffff;
   text-transform: uppercase;
@@ -1598,6 +1606,11 @@ img {
   text-transform: uppercase;
   font-weight: 14px;
   line-height: 30px;
+}
+@media (min-width: 660px) {
+  .tariff-compare--mobile {
+    display: none;
+  }
 }
 
 .tariff-compare--yes {
