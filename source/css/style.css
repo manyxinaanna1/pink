@@ -1542,7 +1542,7 @@ img {
   fill: #D22856;
 }
 
-.tariff__list {
+.tariff-compare__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1550,10 +1550,7 @@ img {
 }
 
 .tariff-compare {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
+  display: flex;
 }
 
 .tariff-compare__header {
@@ -1580,9 +1577,27 @@ img {
   }
 }
 
+.tariff-compare__name {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.tariff-compare__price {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
 .tariff-compare__item {
   display: flex;
   justify-content: space-between;
+}
+
+.tariff-compare--mobile {
+  text-transform: uppercase;
+  font-weight: 14px;
+  line-height: 30px;
 }
 
 .tariff-compare--yes {
