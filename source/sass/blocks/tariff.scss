@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: $color-white;
 }
 
 .tariff-compare {
-  background-color: $color-white;
+
   font-weight: 300;
   font-size: 14px;
   line-height: 30px;
@@ -32,12 +33,17 @@
   }
 }
 
+.tariff-compare__item {
+  display: flex;
+  justify-content: space-between;
+}
 
 
 .tariff-compare--yes {
   display: block;
   width: 31px;
   height: 21px;
+  padding: 19px 17px;
   background-image: url('../img/icons/yes.svg');
   background-repeat: no-repeat;
   background-position: center;
